@@ -22,7 +22,7 @@
       fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
         .then(function(r){return r.json().then(function(j){if(!r.ok||j.success==='false'||j.success===false)throw j;return j})})
         .then(function(){form.reset();status.className='form-status ok';status.textContent='Mensagem enviada! A gente responde em breve :)'})
-        .catch(function(){status.className='form-status err';status.innerHTML='Não foi possível enviar agora. Tente de novo ou escreva para <a href="mailto:contatovictoriacxavier@gmail.com">contatovictoriacxavier@gmail.com</a>.'})
+        .catch(function(){status.className='form-status err';status.innerHTML='Não foi possível enviar agora. Tente de novo ou escreva para <a href="mailto:agenciaootbmarketing@gmail.com">agenciaootbmarketing@gmail.com</a>.'})
         .finally(function(){submit.disabled=false;submit.firstChild.textContent=t;status.scrollIntoView({behavior:'smooth',block:'nearest'})});
     });
   }
