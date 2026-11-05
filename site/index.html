@@ -1,443 +1,717 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="pt-BR">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Victoria Xavier · Portfólio</title>
-<meta name="description" content="Portfólio de Victoria Xavier: marketing, estratégia digital, performance, influência e sistemas.">
+<title>Victoria Xavier · Marketing &amp; Estratégia Digital</title>
+<meta name="description" content="Victoria Xavier: marketing e estratégia digital. Branding, performance, influência e sistemas para marcas que querem escalar de verdade.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#E7BEF8">
+<meta name="theme-color" content="#F2629B">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://portfolio-victoria.vercel.app/">
-<meta property="og:title" content="Victoria Xavier · Portfólio">
-<meta property="og:description" content="Marketing / Estrategista Digital. Branding, performance, influência e sistemas.">
+<meta property="og:title" content="Victoria Xavier · Marketing &amp; Estratégia Digital">
+<meta property="og:description" content="Branding, performance, influência e sistemas.">
 <meta property="og:image" content="https://portfolio-victoria.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://portfolio-victoria.vercel.app/og-image.png">
-<style>html,body{margin:0;background:#2B1838}</style>
-<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "/assets/87ff4bd9.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "/assets/e0fc6bc4.js"};</script>
-<script src="/assets/1b9489cb.js"></script>
+<link rel="preload" href="/assets/0081c60b.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fa061763.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-weight:300 800;font-display:swap;src:url(/assets/41382efe.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Bricolage Grotesque';font-weight:300 800;font-display:swap;src:url(/assets/0081c60b.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-display:swap;src:url(/assets/1c1978ce.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-display:swap;src:url(/assets/fa061763.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-display:swap;src:url(/assets/a2b3ad9a.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-display:swap;src:url(/assets/3aa11b1a.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --pink:#F2629B; --yellow:#EDE787; --lilac:#E5BEF8; --blue:#91A9D9; --cream:#FFF6EE;
+  --ink:#2B1838; --ink-soft:#4a3a57; --accent:#C2185B; --white:#fff;
+  --sans:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Instrument Serif',Georgia,serif;
+  --gutter:clamp(16px,6vw,96px);
+  --max:1440px;
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:clamp(16px,1.15vw,19px);line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.035em;line-height:.95;text-wrap:balance}
+p{margin:0}
+em,.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+section{padding:clamp(72px,10vw,150px) 0;position:relative}
+.bg-pink{background:var(--pink)} .bg-yellow{background:var(--yellow)} .bg-lilac{background:var(--lilac)}
+.bg-blue{background:var(--blue)} .bg-cream{background:var(--cream)}
+
+.eyebrow{font-size:clamp(12px,.95vw,15px);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:clamp(18px,2vw,28px)}
+.eyebrow.muted{color:var(--ink-soft)}
+.h-xl{font-size:clamp(48px,8.4vw,150px)}
+.h-lg{font-size:clamp(42px,6.4vw,112px)}
+.h-md{font-size:clamp(36px,4.6vw,80px)}
+.h-lg em,.h-xl em,.h-md em{color:var(--accent)}
+.lead{font-size:clamp(18px,1.55vw,25px);line-height:1.5;max-width:40ch}
+.rule{border:0;border-top:1.5px solid var(--ink);margin:0}
+
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.tags li{border:1.5px solid var(--ink);border-radius:999px;padding:.38em 1.05em;font-size:clamp(14px,1.1vw,18px);line-height:1.2}
+.tags.soft li{border-color:rgba(43,24,56,.35)}
+
+.num{font-weight:700;letter-spacing:-.045em;line-height:.9}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav.scrolled{background:rgba(255,246,238,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(43,24,56,.08)}
+.brand{font-weight:700;text-decoration:none;letter-spacing:-.02em;font-size:20px}
+.brand em{font-size:1.12em}
+.nav ul{display:flex;gap:clamp(16px,2.2vw,34px);list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:15px;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1.5px;background:currentColor;transition:right .25s}
+.nav ul a:hover::after{right:0}
+.nav .cta{background:var(--ink);color:var(--cream);text-decoration:none;padding:9px 18px;border-radius:999px;font-size:15px;white-space:nowrap}
+@media (max-width:900px){.nav ul{display:none}}
+
+/* HERO */
+.hero{padding:0;display:grid;grid-template-columns:1.5fr 1fr;min-height:min(100svh,980px)}
+.hero-copy{background:var(--pink);padding:calc(68px + clamp(40px,6vw,90px)) var(--gutter) clamp(48px,6vw,90px);display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.hero-top{display:flex;justify-content:space-between;font-size:14px;letter-spacing:.18em;color:var(--ink-soft)}
+.hero h1{font-size:clamp(76px,12.5vw,230px);letter-spacing:-.055em;line-height:.85}
+.hero h1 em{display:block;color:var(--ink);letter-spacing:-.02em;margin-top:-.04em;margin-left:-.03em}
+.hero .role{font-size:clamp(20px,2vw,32px);margin:28px 0 22px}
+.hero .tags li{border-color:rgba(43,24,56,.4)}
+.hero-photo{position:relative;overflow:hidden;background:#eee}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo{aspect-ratio:4/3.4}
+}
+
+/* MARQUEE */
+.marquee{background:var(--yellow);overflow:hidden;padding:clamp(14px,1.8vw,26px) 0;border-block:1.5px solid var(--ink)}
+.marquee-track{display:flex;width:max-content;animation:scroll 32s linear infinite}
+.marquee span{font-family:var(--serif);font-style:italic;font-size:clamp(34px,4.6vw,76px);line-height:1;white-space:nowrap;padding-right:.55em}
+.marquee span::after{content:"✻";font-style:normal;font-family:var(--sans);font-size:.6em;padding-left:.55em;vertical-align:.18em}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* SOBRE */
+.about{display:grid;grid-template-columns:1fr 1.55fr 1fr;gap:clamp(32px,4.5vw,72px);align-items:start}
+.stats{display:flex;flex-direction:column}
+.stat{padding:22px 0;border-bottom:1.5px solid var(--ink)}
+.stat:last-child{border-bottom:0}
+.stat .num{font-size:clamp(64px,7vw,116px)}
+.stat .num.accent{color:var(--accent)}
+.stat p{font-size:clamp(17px,1.4vw,22px);margin-top:6px}
+.about-text h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.2vw,52px);letter-spacing:-.015em;line-height:1.08;margin-bottom:28px}
+.about-text p+p{margin-top:1.1em}
+.about-text strong{font-weight:650}
+.diploma figure{margin:0}
+.diploma img{border-radius:var(--radius);aspect-ratio:3/4.3;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(43,24,56,.45)}
+.diploma figcaption{margin-top:16px;line-height:1.3}
+.diploma figcaption b{display:block;font-size:clamp(19px,1.5vw,24px)}
+.diploma figcaption span{color:var(--ink-soft)}
+@media (max-width:1000px){.about{grid-template-columns:1fr 1fr}.about-text{grid-column:1/-1;order:-1}}
+@media (max-width:600px){.about{grid-template-columns:1fr}}
+
+/* EXPERIÊNCIA */
+.xp-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(40px,5vw,72px)}
+.xp-head h2 em{color:var(--ink)}
+#experiencia .xp-head h2 em{display:block}
+.job{display:grid;grid-template-columns:minmax(150px,240px) 1fr;gap:clamp(24px,4vw,64px);padding:clamp(28px,3.5vw,48px) 0;border-top:1.5px solid var(--ink)}
+.job:last-child{border-bottom:1.5px solid var(--ink)}
+.job .when{color:var(--accent);font-size:clamp(17px,1.4vw,22px);margin-bottom:18px}
+.job .logo{max-width:200px;max-height:80px;width:auto;object-fit:contain}
+.job h3{font-size:clamp(26px,2.5vw,40px);letter-spacing:-.02em;line-height:1.08;margin-bottom:16px;font-weight:650}
+.job p{color:var(--ink-soft);max-width:68ch}
+@media (max-width:640px){.job{grid-template-columns:1fr}.job .logo{max-width:150px;max-height:56px}}
+
+/* DIFERENCIAIS */
+.cols4{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,48px);margin-top:clamp(56px,8vw,140px)}
+.col{border-top:1.5px solid var(--ink);padding-top:22px}
+.col .n{color:var(--accent);font-size:15px;margin-bottom:18px}
+.col h3{font-size:clamp(26px,2.3vw,38px);letter-spacing:-.025em;line-height:1.02;margin-bottom:18px}
+.col p{color:var(--ink-soft)}
+@media (max-width:1000px){.cols4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cols4{grid-template-columns:1fr}}
+
+/* MARCAS */
+.logos{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(36px,5vw,90px) clamp(24px,4vw,64px);margin-top:clamp(56px,8vw,120px);align-items:center}
+.logos img{width:100%;max-height:92px;object-fit:contain;transition:transform .3s}
+.logos img:hover{transform:scale(1.06)}
+@media (max-width:900px){.logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:480px){.logos{grid-template-columns:repeat(2,1fr)}}
+
+/* CASE VITÊ */
+.case{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(40px,5vw,80px);align-items:center}
+.case-logo{width:clamp(200px,24vw,380px);margin-bottom:28px}
+.case .lead{margin-bottom:32px}
+.case .tags{margin-bottom:44px}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mini-stats div{border-top:1.5px solid var(--ink);padding-top:16px}
+.mini-stats .num{font-size:clamp(30px,3.3vw,56px);white-space:nowrap}
+.mini-stats p{color:var(--ink-soft);line-height:1.3;margin-top:6px}
+.case-media{display:grid;grid-template-columns:.85fr 1.6fr;gap:clamp(14px,1.6vw,24px);align-items:start}
+.phone{border-radius:clamp(26px,3vw,44px);overflow:hidden;border:clamp(6px,.7vw,10px) solid #111;background:#111;box-shadow:0 40px 80px -40px rgba(43,24,56,.6)}
+.phone img{width:100%}
+.stack{display:grid;gap:clamp(10px,1.2vw,18px)}
+.creators{position:relative;border-radius:var(--radius);overflow:hidden}
+.creators .pill{position:absolute;left:14px;bottom:14px;background:var(--ink);color:var(--cream);font-size:clamp(11px,.9vw,15px);letter-spacing:.14em;padding:.55em 1.1em;border-radius:999px}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.2vw,18px)}
+.posts img{border-radius:14px;aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 18px 30px -22px rgba(43,24,56,.6)}
+@media (max-width:1000px){.case{grid-template-columns:1fr}}
+@media (max-width:560px){.case-media{grid-template-columns:1fr}.case-media .phone{max-width:300px;margin:0 auto}.mini-stats{grid-template-columns:1fr 1fr}}
+
+/* ANTES E DEPOIS */
+.ba{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.ba-rows{margin-top:clamp(36px,4vw,56px)}
+.ba-row{border-top:1.5px solid var(--ink);padding:20px 0 24px}
+.ba-row p{color:var(--ink-soft);margin-bottom:6px}
+.ba-row .num{font-size:clamp(44px,5.4vw,88px)}
+.ba-row .to{color:var(--accent)}
+.ba-row .arrow{font-weight:400;margin:0 .15em}
+.ba-phones{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.5vw,40px)}
+.ba-phones figure{margin:0;text-align:center}
+.ba-phones figcaption{display:inline-block;font-size:clamp(12px,1vw,16px);letter-spacing:.16em;font-weight:600;padding:.6em 1.4em;border-radius:999px;margin-bottom:18px;background:#f3eff8}
+.ba-phones figure:last-child figcaption{background:var(--pink)}
+@media (max-width:900px){.ba{grid-template-columns:1fr}}
+
+/* TIKTOK */
+.split{display:grid;grid-template-columns:1fr 1.05fr .7fr;gap:clamp(36px,4.5vw,72px);align-items:center}
+.split h2 em{color:var(--ink);display:block}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:56px 1fr;padding:24px 0;border-top:1.5px solid var(--ink)}
+.steps li:last-child{border-bottom:1.5px solid var(--ink)}
+.steps .n{font-size:16px;padding-top:6px}
+.steps h3{font-size:clamp(22px,2vw,32px);letter-spacing:-.02em;line-height:1.1;margin-bottom:8px;font-weight:650}
+.steps p{color:var(--ink-soft)}
+.split .phone{max-width:340px;justify-self:end}
+@media (max-width:1050px){.split{grid-template-columns:1fr 1fr}.split .phone{grid-column:1/-1;justify-self:center;max-width:300px}}
+@media (max-width:640px){.split{grid-template-columns:1fr}}
+
+/* CRESCIMENTO */
+.growth{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(40px,6vw,96px);align-items:end}
+.growth .sub{color:var(--ink-soft);margin:22px 0 22px;font-size:clamp(16px,1.3vw,20px)}
+.growth .what{font-weight:650;margin:40px 0 14px}
+.big3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.big3 div{border-top:1.5px solid var(--ink);padding-top:18px}
+.big3 .num{font-size:clamp(30px,3.3vw,58px);white-space:nowrap}
+.big3 p{color:var(--ink-soft);line-height:1.3;margin-top:8px}
+.chart{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.5vw,40px);align-items:end;height:clamp(320px,40vw,620px);border-bottom:1.5px solid var(--ink)}
+.bar{border-radius:14px 14px 0 0;transform-origin:bottom;transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar.a{height:1.2%;background:var(--blue)}
+.bar.b{height:100%;background:var(--pink)}
+.chart-labels{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.5vw,40px);margin-top:16px;font-weight:650;font-size:clamp(18px,1.5vw,24px)}
+.chart-note{color:var(--ink-soft);margin-top:14px}
+.js .chart:not(.in) .bar.b{transform:scaleY(.02)}
+@media (max-width:900px){.growth{grid-template-columns:1fr}.chart{height:300px}}
+@media (max-width:560px){.big3{grid-template-columns:1fr}}
+
+/* ANYTIME */
+.any{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(40px,5vw,80px);align-items:center}
+.any-logo{width:clamp(220px,25vw,400px);margin-bottom:32px}
+.any .eyebrow{color:var(--ink)}
+.any .lead{margin-bottom:32px}
+.any-media{display:grid;grid-template-columns:.8fr 1.5fr;gap:clamp(14px,1.6vw,24px);align-items:center}
+.any-media .posts img{aspect-ratio:7/10}
+@media (max-width:1000px){.any{grid-template-columns:1fr}}
+@media (max-width:560px){.any-media{grid-template-columns:1fr}.any-media .phone{max-width:300px;margin:0 auto}}
+
+/* RESULTADOS */
+.res-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,64px)}
+.res-head h2 em{color:var(--ink)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.5vw,40px)}
+.card{background:var(--white);border:1px solid rgba(43,24,56,.1);border-radius:28px;padding:clamp(24px,3vw,48px);box-shadow:0 30px 60px -40px rgba(43,24,56,.45)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:clamp(22px,2.5vw,40px)}
+.card-top .lab{font-size:clamp(13px,1.05vw,17px);letter-spacing:.14em;font-weight:600}
+.card-top .lab::before{content:"●";margin-right:.7em;font-size:.8em}
+.card-top .roi{background:var(--ink);color:var(--cream);padding:.45em 1em;border-radius:999px;font-weight:650;font-size:clamp(14px,1.15vw,19px);white-space:nowrap}
+.card .big{display:flex;align-items:baseline;flex-wrap:wrap;gap:.35em;margin-bottom:clamp(22px,2.5vw,36px)}
+.card .big .num{font-size:clamp(48px,5.6vw,96px)}
+.card .big span:last-child{color:var(--ink-soft);font-size:clamp(17px,1.5vw,24px)}
+.card h4{margin:22px 0 10px;font-size:clamp(16px,1.25vw,20px);font-weight:650}
+.meter{display:grid;grid-template-columns:110px 1fr 6.5em;gap:16px;align-items:center;padding:6px 0;color:var(--ink-soft)}
+.meter b{color:var(--ink);font-weight:650;min-width:5.5ch;text-align:right}
+.track{height:16px;background:#ece8ee;border-radius:99px;overflow:hidden}
+.fill{height:100%;border-radius:99px;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.fill.p{background:var(--pink)} .fill.b{background:var(--blue)}
+.js .card:not(.in) .fill{width:0!important}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(22px,2.5vw,36px);border-top:1px solid rgba(43,24,56,.18);padding-top:clamp(18px,2vw,28px)}
+.kpis div{padding:0 clamp(10px,1.4vw,22px)}
+.kpis div:first-child{padding-left:0}
+.kpis div+div{border-left:1px solid rgba(43,24,56,.18)}
+.kpis p{color:var(--ink-soft);font-size:clamp(14px,1.1vw,18px)}
+.kpis .num{font-size:clamp(24px,2.4vw,38px);letter-spacing:-.03em;margin-top:6px}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}
+.cards>*{min-width:0}
+@media (max-width:480px){.kpis .num{font-size:21px}.kpis p{font-size:13px}.kpis div{padding:0 8px}}
+@media (max-width:420px){.meter{grid-template-columns:76px 1fr 5.6em;gap:10px;font-size:15px}}
+
+/* SISTEMAS */
+.sys{display:grid;grid-template-columns:.95fr 1.25fr .9fr;gap:clamp(32px,4vw,64px);align-items:start}
+.sys h2 em{display:block}
+.sys .lead{margin-top:28px}
+.browser{border-radius:18px;overflow:hidden;background:#f6f1f4;box-shadow:0 30px 60px -36px rgba(43,24,56,.55)}
+.browser .bar-top{display:flex;align-items:center;gap:7px;padding:10px 14px;font-size:13px;color:var(--ink-soft)}
+.browser .bar-top i{width:10px;height:10px;border-radius:50%;background:var(--pink)}
+.browser .bar-top i:nth-child(2){background:#e5d86b}
+.browser .bar-top i:nth-child(3){background:var(--blue);margin-right:10px}
+.browser img{width:100%}
+.browsers{display:grid;gap:clamp(20px,2.4vw,36px)}
+.feat{border-top:1.5px solid var(--ink);padding-top:20px;margin-bottom:clamp(28px,3vw,44px)}
+.feat .n{color:var(--accent);font-size:15px;margin-bottom:12px}
+.feat h3{font-size:clamp(24px,2.2vw,36px);letter-spacing:-.025em;line-height:1.05;margin-bottom:12px}
+.feat p{color:var(--ink-soft)}
+.feat a{font-weight:600;color:var(--accent);text-decoration:none;display:inline-block;margin-top:10px}
+.feat a:hover{text-decoration:underline}
+@media (max-width:1100px){.sys{grid-template-columns:1fr 1fr}.sys .browsers{grid-column:1/-1;grid-row:2}}
+@media (max-width:640px){.sys{grid-template-columns:1fr}}
+
+/* PERFIS */
+.profiles{display:grid;grid-template-columns:1fr 1.6fr;gap:clamp(40px,5vw,80px);align-items:center}
+.profiles h2 em{color:var(--ink);display:block}
+.profiles .lead{margin-top:32px}
+.phones3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2vw,32px);align-items:start}
+.phones3 .phone:nth-child(2){margin-top:clamp(40px,6vw,100px)}
+@media (max-width:900px){.profiles{grid-template-columns:1fr}}
+@media (max-width:520px){.phones3{grid-template-columns:repeat(3,72vw);overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(var(--gutter)*-1);padding:0 var(--gutter) 20px}.phones3 .phone{scroll-snap-align:center}.phones3 .phone:nth-child(2){margin-top:0}}
+
+/* TRABALHOS */
+.works-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,72px)}
+.works-head h2 em{color:var(--ink)}
+.works-head .eyebrow{order:-1;width:100%}
+.works{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.3vw,20px)}
+.works img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;transition:transform .4s}
+.works a{display:block;overflow:hidden;border-radius:16px}
+.works a:hover img{transform:scale(1.05)}
+.works .w2{grid-column:span 2;grid-row:span 2}
+@media (max-width:700px){.works{grid-template-columns:repeat(2,1fr)}}
+
+/* OBJETIVOS */
+.goal{min-height:min(90svh,860px);display:flex;flex-direction:column;justify-content:space-between;gap:80px}
+.goal .tags li{letter-spacing:.14em;text-transform:uppercase;font-weight:600;font-size:clamp(13px,1.05vw,17px);padding:.7em 1.4em}
+.goal p.eyebrow{color:var(--ink);margin-bottom:24px}
+.goal h2{font-size:clamp(34px,5vw,84px);line-height:1.02;letter-spacing:-.035em;max-width:20ch}
+
+/* CONTATO */
+.contact{display:flex;flex-direction:column;gap:clamp(36px,4vw,56px)}
+.contact-top{display:flex;justify-content:space-between;font-size:14px;letter-spacing:.16em;text-transform:uppercase}
+.contact h2{font-size:clamp(52px,9vw,160px);letter-spacing:-.05em;line-height:.9}
+.contact h2 em{color:var(--ink);letter-spacing:-.02em}
+.contact .lead{max-width:44ch}
+.contact-row{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.mail{display:flex;align-items:center;gap:clamp(16px,2vw,32px);background:var(--ink);color:var(--cream);text-decoration:none;border-radius:999px;padding:clamp(14px,1.6vw,22px) clamp(14px,1.6vw,22px) clamp(14px,1.6vw,22px) clamp(24px,3vw,52px);max-width:100%;transition:transform .25s}
+.mail:hover{transform:translateY(-3px)}
+.mail small{display:block;color:var(--yellow);letter-spacing:.14em;font-size:clamp(11px,.95vw,15px);text-transform:uppercase}
+.mail b{display:block;font-size:clamp(17px,2.4vw,40px);font-weight:600;letter-spacing:-.02em;word-break:break-all}
+.mail .go{flex:none;width:clamp(52px,6vw,96px);aspect-ratio:1;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;font-size:clamp(22px,2.4vw,38px);transition:transform .25s}
+.mail:hover .go{transform:rotate(-30deg)}
+.contact-right{text-align:right;line-height:1.6}
+footer{background:var(--ink);color:var(--cream);padding:28px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
+@media (max-width:640px){.contact-right{text-align:left}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<style>/* vietnamese */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300 800;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("/assets/a7299b46.woff2") format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300 800;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("/assets/41382efe.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Bricolage Grotesque';
-  font-style: normal;
-  font-weight: 300 800;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url("/assets/0081c60b.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/1c1978ce.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fa061763.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/a2b3ad9a.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Instrument Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/3aa11b1a.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-<script src="/assets/323fd713.js"></script>
-<style>body{margin:0;background:#2B1838}a{color:#C2185B}a:hover{color:#2B1838}</style>
-</helmet>
-<x-import component-from-global-scope="deck-stage" from="/assets/085a5e22.js#/deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
 
-<section data-label="Capa" data-screen-label="01 Capa" style="background:#F2619C;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;display:grid;grid-template-columns:1fr 760px;overflow:hidden" data-om-slide-id="db858254">
-  <div style="position:absolute;left:0;right:0;bottom:0;height:128px;background:#EDE986;color:#2B1838;display:flex;align-items:center;gap:40px;padding:0 48px;overflow:hidden;white-space:nowrap;font-family:'Instrument Serif',serif;font-style:italic;font-size:72px;line-height:1;z-index:2"><span>Branding</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Estratégia</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Performance</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Influência</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Sistemas</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Branding</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span><span>Estratégia</span><span style="font-family:'Bricolage Grotesque',sans-serif;font-style:normal;font-size:56px">✻</span></div>
-  <div style="padding:120px 120px 220px;display:flex;flex-direction:column;justify-content:space-between">
-    <div style="display:flex;justify-content:space-between;font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#5B4766"><span>Portfólio</span><span>2026</span></div>
-    <div style="display:flex;flex-direction:column;gap:40px">
-      <h1 style="margin:0;font-size:220px;line-height:0.86;font-weight:700;letter-spacing:-0.045em">Victoria<br><span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#2B1838;letter-spacing:-0.02em">Xavier</span></h1>
-      <p style="margin:0;font-size:40px;font-weight:400">Marketing <span style="color:#2B1838">/</span> Estrategista Digital</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap"><span style="font-size:24px;border:1.5px solid #2B183840;border-radius:999px;padding:10px 24px">Branding</span><span style="font-size:24px;border:1.5px solid #2B183840;border-radius:999px;padding:10px 24px">Performance</span><span style="font-size:24px;border:1.5px solid #2B183840;border-radius:999px;padding:10px 24px">Influência</span><span style="font-size:24px;border:1.5px solid #2B183840;border-radius:999px;padding:10px 24px">Sistemas</span></div>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#topo" class="brand">Victoria <em>Xavier</em></a>
+    <nav aria-label="Seções">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#trabalhos">Trabalhos</a></li>
+      </ul>
+    </nav>
+    <a href="#contato" class="cta">Vamos conversar</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero" aria-label="Apresentação">
+  <div class="hero-copy">
+    <div class="hero-top"><span>PORTFÓLIO</span><span>2026</span></div>
+    <div>
+      <h1>Victoria<em>Xavier</em></h1>
+      <p class="role">Marketing / Estrategista Digital</p>
+      <ul class="tags"><li>Branding</li><li>Performance</li><li>Influência</li><li>Sistemas</li></ul>
     </div>
   </div>
-  <div style="position:relative"><image-slot id="capa-foto" shape="rect" placeholder="Sua foto" src="/assets/ea39a018.webp"></image-slot></div>
+  <div class="hero-photo"><img src="/assets/ea39a018.webp" alt="Mão segurando uma taça de drink com um sachê rosa enquanto fotografa com o celular" fetchpriority="high"></div>
 </section>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Branding</span><span>Estratégia</span><span>Performance</span><span>Influência</span><span>Sistemas</span>
+    <span>Branding</span><span>Estratégia</span><span>Performance</span><span>Influência</span><span>Sistemas</span>
+  </div>
+</div>
 
-<section data-label="Sobre" data-screen-label="02 Sobre" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:100px 120px;display:grid;grid-template-columns:400px 1fr 440px;gap:72px" data-om-slide-id="aca52614">
-  <div style="display:flex;flex-direction:column;justify-content:center;gap:24px">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Sobre mim</span>
-    <div style="display:flex;flex-direction:column;gap:48px">
-      <div style="display:flex;flex-direction:column;gap:4px;padding-top:24px"><span style="font-size:112px;font-weight:700;line-height:1;letter-spacing:-0.04em">5</span><span style="font-size:28px">anos de experiência</span></div>
-      <div style="display:flex;flex-direction:column;gap:4px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:112px;font-weight:700;line-height:1;letter-spacing:-0.04em">+20</span><span style="font-size:28px">marcas atendidas</span></div>
-      <div style="display:flex;flex-direction:column;gap:4px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:112px;font-weight:700;line-height:1;letter-spacing:-0.04em;color:#C2185B">300%</span><span style="font-size:28px">de aumento de faturamento em um case</span></div>
+<!-- SOBRE -->
+<section class="bg-cream" id="sobre">
+  <div class="wrap about">
+    <div class="stats rv">
+      <p class="eyebrow">Sobre mim</p>
+      <div class="stat"><div class="num">5</div><p>anos de experiência</p></div>
+      <div class="stat"><div class="num">+20</div><p>marcas atendidas</p></div>
+      <div class="stat"><div class="num accent">300%</div><p>de aumento de faturamento em um case</p></div>
     </div>
-  </div>
-  <div style="display:flex;flex-direction:column;justify-content:center;gap:24px;font-size:24px;line-height:1.45;text-wrap:pretty">
-    <p style="margin:0;font-family:'Instrument Serif',serif;font-size:44px;line-height:1.1">Desde que me conheço por gente, a minha paixão sempre foi vender...</p>
-    <p style="margin:0">Do bolo de pote que eu vendia na escola aos bastidores do marketing digital, o foco em negócios e vendas sempre esteve no meu sangue! Em 2020, a convite de uma amiga comecei a trabalhar com infoprodutos, nisso, dominei métricas, processos e funis... e nunca mais parei. Formada em Marketing pela PUCPR e com 5 anos de experiência gerindo mais de 20 marcas, uni a intuição comercial à estratégia de dados para transformar tráfego em lucro real</p>
-    <p style="margin:0">Em 2023, entrei na Vitê quando a marca ainda era recém-criada. Na base de muitos testes e foco obsessivo em crescimento, participei ativamente da estruturação e do crescimento do e-commerce</p>
-    <p style="margin:0;font-weight:600">Nunca me contentei com o médio. A minha entrega une visão de negócio, performance e execução impecável para tracionar marcas que querem escalar o faturamento de verdade, respeitando e consolidando o branding!</p>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:20px;justify-content:center">
-    <div style="height:640px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 30px 60px -36px rgba(43,24,56,0.5)"><image-slot id="sobre-diploma" shape="rect" src="/assets/377d5cfb.jpg" placeholder="Diploma"></image-slot></div>
-    <div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:700">Bacharel em Marketing</span><span style="font-size:24px;color:#5B4766">PUCPR · 2026</span></div>
-  </div>
-</section>
-
-
-
-<section data-label="Experiência 1" data-screen-label="04 Experiência" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:grid;grid-template-columns:520px 1fr;gap:100px" data-om-slide-id="2086d950">
-  <div style="display:flex;flex-direction:column;justify-content:space-between">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Trajetória</span>
-    <h2 style="margin:0;font-size:88px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">Experiência <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">profissional</span></h2>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:56px;justify-content:center">
-    <div style="display:grid;grid-template-columns:220px 1fr;gap:48px;border-top:2px solid #2B1838;padding-top:32px">
-      <div style="display:flex;flex-direction:column;gap:20px"><span style="font-size:28px;color:#C2185B">2023 — Atual</span><img src="/assets/0cd7c7ed.png" alt="Logo" style="height:90px;width:100%;object-fit:contain;object-position:left center;display:block"></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><h3 style="margin:0;font-size:40px;font-weight:600;letter-spacing:-0.01em">Especialista em comunicação de marketing</h3><p style="margin:0;font-size:26px;line-height:1.5;text-wrap:pretty">Consultoria em marketing estratégico · Planejamento e execução de campanhas estratégicas · Gestão de marketing de influenciadores e parcerias estratégicas · Branding e reposicionamento da marca · Desenvolvimento e lançamento de novos produtos · Gestão de marketing e planejamento de conteúdos para redes sociais · Gestão de relacionamento com o cliente (CRM) · Reformulação e otimização do site</p></div>
+    <div class="about-text rv">
+      <h2>Desde que me conheço por gente, a minha paixão sempre foi vender…</h2>
+      <p>Do bolo de pote que eu vendia na escola aos bastidores do marketing digital, o foco em negócios e vendas sempre esteve no meu sangue! Em 2020, a convite de uma amiga comecei a trabalhar com infoprodutos, nisso, dominei métricas, processos e funis… e nunca mais parei. Formada em Marketing pela PUCPR e com 5 anos de experiência gerindo mais de 20 marcas, uni a intuição comercial à estratégia de dados para transformar tráfego em lucro real.</p>
+      <p>Em 2023, entrei na Vitê quando a marca ainda era recém-criada. Na base de muitos testes e foco obsessivo em crescimento, participei ativamente da estruturação e do crescimento do e-commerce.</p>
+      <p><strong>Nunca me contentei com o médio. A minha entrega une visão de negócio, performance e execução impecável para tracionar marcas que querem escalar o faturamento de verdade, respeitando e consolidando o branding!</strong></p>
     </div>
-    <div style="display:grid;grid-template-columns:220px 1fr;gap:48px;border-top:2px solid #2B1838;padding-top:32px">
-      <div style="display:flex;flex-direction:column;gap:20px"><span style="font-size:28px;color:#C2185B">2022 — 2023</span><img src="/assets/c01febfb.png" alt="Logo" style="height:90px;width:100%;object-fit:contain;object-position:left center;display:block"></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><h3 style="margin:0;font-size:40px;font-weight:600;letter-spacing:-0.01em">Analista de marketing</h3><p style="margin:0;font-size:26px;line-height:1.5;text-wrap:pretty">Gerenciamento de redes sociais (Instagram, TikTok, Pinterest, Google Business, LinkedIn) · Produção e edição de conteúdo para site e blog · Gestão de influenciadores e parcerias estratégicas B2B com a marca WAP · Desenvolvimento de estratégias para aumento do alcance e engajamento da marca · Supervisão do tráfego pago · Captação e edição de fotos e vídeos com câmera profissional para os canais digitais</p></div>
+    <div class="diploma rv">
+      <figure>
+        <img src="/assets/377d5cfb.jpg" alt="Diploma de Bacharel em Marketing da PUCPR" loading="lazy">
+        <figcaption><b>Bacharel em Marketing</b><span>PUCPR · 2026</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section data-label="Experiência 2" data-screen-label="05 Experiência" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:grid;grid-template-columns:520px 1fr;gap:100px" data-om-slide-id="74d20806">
-  <div style="display:flex;flex-direction:column;justify-content:space-between">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Trajetória</span>
-    <h2 style="margin:0;font-size:88px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">Experiência <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">profissional</span></h2>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:56px;justify-content:center">
-    <div style="display:grid;grid-template-columns:220px 1fr;gap:48px;border-top:2px solid #2B1838;padding-top:32px">
-      <div style="display:flex;flex-direction:column;gap:20px"><span style="font-size:28px;color:#C2185B">2022 — 2026</span><img src="/assets/846576a9.png" alt="Logo" style="height:90px;width:100%;object-fit:contain;object-position:left center;display:block"></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><h3 style="margin:0;font-size:40px;font-weight:600;letter-spacing:-0.01em">Freelance · Agência de marketing</h3><p style="margin:0;font-size:26px;line-height:1.5;text-wrap:pretty">Gestão de marketing para marcas nacionais e internacionais · Estratégias de social media, tráfego pago e posicionamento digital · Criação e desenvolvimento de sites e landing pages · Gestão de clientes, projetos e equipes multidisciplinares · Planejamento de campanhas com foco em crescimento e conversão</p></div>
+<!-- EXPERIÊNCIA -->
+<section class="bg-cream" id="experiencia" style="padding-top:0">
+  <div class="wrap">
+    <div class="xp-head rv">
+      <h2 class="h-lg">Experiência <em>profissional</em></h2>
+      <p class="eyebrow" style="margin:0">Trajetória</p>
     </div>
-    <div style="display:grid;grid-template-columns:220px 1fr;gap:48px;border-top:2px solid #2B1838;padding-top:32px">
-      <div style="display:flex;flex-direction:column;gap:20px"><span style="font-size:28px;color:#C2185B">Freelancer</span><img src="/assets/0dc471ec.png" alt="Logo" style="height:90px;width:100%;object-fit:contain;object-position:left center;display:block"></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><h3 style="margin:0;font-size:40px;font-weight:600;letter-spacing:-0.01em">Coordenação de eventos</h3><p style="margin:0;font-size:26px;line-height:1.5;text-wrap:pretty">Planejamento, organização e execução de eventos de grande porte, incluindo concursos nacionais como Enem, Enade e Prêmio Capes · Coordenação, contratação e capacitação de equipes para operações em larga escala · Gestão logística e otimização de processos para garantir excelência operacional · Liderança de times com mais de 200 colaboradores · Atuação como Coordenadora Municipal de Curitiba no CPNU 2024</p></div>
+    <article class="job rv">
+      <div><p class="when">2023 — Atual</p><img class="logo" src="/assets/0cd7c7ed.png" alt="Vitê" loading="lazy"></div>
+      <div><h3>Especialista em comunicação de marketing</h3><p>Consultoria em marketing estratégico · Planejamento e execução de campanhas estratégicas · Gestão de marketing de influenciadores e parcerias estratégicas · Branding e reposicionamento da marca · Desenvolvimento e lançamento de novos produtos · Gestão de marketing e planejamento de conteúdos para redes sociais · Gestão de relacionamento com o cliente (CRM) · Reformulação e otimização do site</p></div>
+    </article>
+    <article class="job rv">
+      <div><p class="when">2022 — 2026</p><img class="logo" src="/assets/846576a9.png" alt="Out of the Box" loading="lazy" style="max-height:96px"></div>
+      <div><h3>Freelance · Agência de marketing</h3><p>Gestão de marketing para marcas nacionais e internacionais · Estratégias de social media, tráfego pago e posicionamento digital · Criação e desenvolvimento de sites e landing pages · Gestão de clientes, projetos e equipes multidisciplinares · Planejamento de campanhas com foco em crescimento e conversão</p></div>
+    </article>
+    <article class="job rv">
+      <div><p class="when">2022 — 2023</p><img class="logo" src="/assets/c01febfb.png" alt="nano4you" loading="lazy"></div>
+      <div><h3>Analista de marketing</h3><p>Gerenciamento de redes sociais (Instagram, TikTok, Pinterest, Google Business, LinkedIn) · Produção e edição de conteúdo para site e blog · Gestão de influenciadores e parcerias estratégicas B2B com a marca WAP · Desenvolvimento de estratégias para aumento do alcance e engajamento da marca · Supervisão do tráfego pago · Captação e edição de fotos e vídeos com câmera profissional para os canais digitais</p></div>
+    </article>
+    <article class="job rv">
+      <div><p class="when">Freelancer</p><img class="logo" src="/assets/0dc471ec.png" alt="Fundação Cesgranrio" loading="lazy"></div>
+      <div><h3>Coordenação de eventos</h3><p>Planejamento, organização e execução de eventos de grande porte, incluindo concursos nacionais como Enem, Enade e Prêmio Capes · Coordenação, contratação e capacitação de equipes para operações em larga escala · Gestão logística e otimização de processos para garantir excelência operacional · Liderança de times com mais de 200 colaboradores · Atuação como Coordenadora Municipal de Curitiba no CPNU 2024</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-yellow" id="diferenciais">
+  <div class="wrap">
+    <div class="xp-head rv" style="margin:0">
+      <h2 class="h-lg">O que eu posso <em>agregar</em></h2>
+      <p class="eyebrow muted" style="margin:0">Diferenciais</p>
+    </div>
+    <div class="cols4">
+      <div class="col rv"><p class="n">01</p><h3>Comunidade, collabs e influenciadoras</h3><p>Na Vitê e na Anytime, estruturei canais de captação de influenciadoras, automações de cadastro e campanhas de collabs que geram tráfego orgânico e conversão direta.</p></div>
+      <div class="col rv"><p class="n">02</p><h3>Performance com foco em ROI</h3><p>Campanhas de tráfego pago com ROI de 75x a +119x e gestão do funil completo, do tráfego à retenção e ao aumento de clientes recorrentes.</p></div>
+      <div class="col rv"><p class="n">03</p><h3>Estética e branding lifestyle</h3><p>Transito entre direção de arte, identidade visual e grids e a estratégia de negócio. Sei traduzir o posicionamento de uma marca em desejo de compra.</p></div>
+      <div class="col rv"><p class="n">04</p><h3>Solucionadora e ágil</h3><p>Crio páginas, ferramentas e automações para otimizar processos, como o portal de criadoras e os desafios de comunidade, e coloco projetos no ar de forma independente.</p></div>
     </div>
   </div>
 </section>
 
-<section data-label="Por que me contratar" data-screen-label="07 Por que me contratar" style="background:#EDE986;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:flex;flex-direction:column;justify-content:space-between" data-om-slide-id="1b2a95c2">
-  <div style="display:flex;justify-content:space-between;align-items:flex-start">
-    <h2 style="margin:0;font-size:104px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">O que eu posso agregar <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#C2185B">para a CUFF</span></h2>
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#5B4766">Diferenciais</span>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:56px">
-    <div style="display:flex;flex-direction:column;gap:24px;border-top:2px solid #2B1838;padding-top:32px"><span style="font-size:24px;color:#C2185B">01</span><h3 style="margin:0;font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-0.02em;text-wrap:balance">Comunidade, collabs e influenciadoras</h3><p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Na Vitê e na Anytime, estruturei canais de captação de influenciadoras, automações de cadastro e campanhas de collabs que geram tráfego orgânico e conversão direta.</p></div>
-    <div style="display:flex;flex-direction:column;gap:24px;border-top:2px solid #2B1838;padding-top:32px"><span style="font-size:24px;color:#C2185B">02</span><h3 style="margin:0;font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-0.02em;text-wrap:balance">Performance com foco em ROI</h3><p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Campanhas de tráfego pago com ROI de 75x a +119x e gestão do funil completo, do tráfego à retenção e ao aumento de clientes recorrentes.</p></div>
-    <div style="display:flex;flex-direction:column;gap:24px;border-top:2px solid #2B1838;padding-top:32px"><span style="font-size:24px;color:#C2185B">03</span><h3 style="margin:0;font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-0.02em;text-wrap:balance">Estética e branding lifestyle</h3><p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Transito entre direção de arte, identidade visual e grids e a estratégia de negócio. Sei traduzir o posicionamento de uma marca de acessórios em desejo de compra.</p></div>
-    <div style="display:flex;flex-direction:column;gap:24px;border-top:2px solid #2B1838;padding-top:32px"><span style="font-size:24px;color:#C2185B">04</span><h3 style="margin:0;font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-0.02em;text-wrap:balance">Solucionadora e ágil</h3><p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Crio páginas, ferramentas e automações para otimizar processos, como o portal de criadoras e os desafios de comunidade, e coloco projetos no ar de forma independente.</p></div>
-  </div>
-</section>
-
-<section data-label="Marcas" data-screen-label="09 Marcas" style="background:#E7BEF8;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:flex;flex-direction:column;gap:72px" data-om-slide-id="03f8ce80">
-  <div style="display:flex;justify-content:space-between;align-items:flex-end">
-    <h2 style="margin:0;font-size:104px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">Marcas <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#C2185B">atendidas</span></h2>
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#5B4766">Clientes</span>
-  </div>
-  <div style="flex:1;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(2,1fr);column-gap:32px;row-gap:24px">
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/0cd7c7ed.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/c01febfb.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/4a22de3e.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/741d2ff0.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/a8e25a07.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/0dc471ec.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/946d8e03.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/34de4d8e.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/15d77c35.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-    <div style="position:relative;padding:28px 36px"><div style="position:absolute;inset:28px 36px"><img src="/assets/b8fc5737.png" alt="Logo" style="width:100%;height:100%;object-fit:contain;display:block"></div></div>
-  </div>
-</section>
-
-<section data-label="Vitê" data-screen-label="Vitê" style="background:#E7BEF8;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:96px 120px;display:grid;grid-template-columns:1fr 900px;gap:64px;align-items:center" data-om-slide-id="9f15bf7c">
-  <div style="display:flex;flex-direction:column;gap:48px">
-    <div style="display:flex;flex-direction:column;gap:20px">
-      <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Saúde e beleza · 2023 — atual</span>
-      <h2 style="margin:0;line-height:0"><img src="/assets/10807046.png" alt="Vitê" style="height:120px;width:auto;display:block"></h2>
-      <p style="margin:0;font-size:30px;line-height:1.45;text-wrap:pretty;max-width:820px">Como especialista em comunicação de marketing, cuido da estratégia da marca de ponta a ponta: do reposicionamento às campanhas, das influenciadoras ao site e à TikTok Shop.</p>
+<!-- MARCAS -->
+<section class="bg-lilac" id="marcas">
+  <div class="wrap">
+    <div class="xp-head rv" style="margin:0">
+      <h2 class="h-lg">Marcas <em>atendidas</em></h2>
+      <p class="eyebrow muted" style="margin:0">Clientes</p>
     </div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px"><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Branding</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Campanhas</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Influenciadoras</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Social media</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">CRM</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Site</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">TikTok Shop</span></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px"><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:56px;font-weight:700;letter-spacing:-0.03em;line-height:1">95,2 mil</span><span style="font-size:24px;color:#5B4766">seguidores</span></div><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:56px;font-weight:700;letter-spacing:-0.03em;line-height:1">1.117</span><span style="font-size:24px;color:#5B4766">publicações</span></div><div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:56px;font-weight:700;letter-spacing:-0.03em;line-height:1">2,7 mi</span><span style="font-size:24px;color:#5B4766">visualizações em 30 dias</span></div></div>
-  </div>
-  <div style="display:flex;gap:32px;align-items:center">
-    <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;box-sizing:border-box;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.5)"><div style="flex:1;border-radius:44px;overflow:hidden;position:relative"><image-slot id="vite-perfil" shape="rect" src="/assets/3c45a017.jpg" placeholder="Print do perfil"></image-slot></div></div>
-    <div style="width:528px;height:736px;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:276px 1fr 1fr;gap:16px"><div style="grid-column:span 12;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-creators" shape="rect" src="/assets/22abc32c.jpg" placeholder="Gestão de creators"></image-slot><span style="position:absolute;left:12px;bottom:12px;background:#2B1838;color:#FFF8EE;font-size:22px;letter-spacing:0.06em;text-transform:uppercase;border-radius:999px;padding:8px 18px;pointer-events:none">Gestão de creators</span></div><div style="grid-column:span 3;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-2" shape="rect" src="/assets/b39c45a3.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 3;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-3" shape="rect" src="/assets/21889843.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 3;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-4" shape="rect" src="/assets/28a5680f.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 3;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-5" shape="rect" src="/assets/5a2d7617.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 4;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-6" shape="rect" src="/assets/aba8e5b6.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 4;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-7" shape="rect" src="/assets/e1aee339.jpg" placeholder="Post"></image-slot></div><div style="grid-column:span 4;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="vite-post-8" shape="rect" src="/assets/453b8934.jpg" placeholder="Post"></image-slot></div></div>
-  </div>
-</section>
-
-<section data-label="Vitê antes e depois" data-screen-label="Vitê antes e depois" style="background:#EDE986;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:80px 120px;display:grid;grid-template-columns:1fr 840px;gap:80px;align-items:center" data-om-slide-id="9ea0a334">
-  <div style="display:flex;flex-direction:column;gap:56px">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Case @minhavite</span>
-    <h2 style="margin:0;font-size:104px;line-height:0.92;font-weight:700;letter-spacing:-0.035em">Vitê, <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#C2185B">antes e depois</span></h2>
-    <div style="display:flex;flex-direction:column;gap:28px">
-      <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:24px;color:#5B4766">Seguidores</span><span style="font-size:72px;font-weight:700;letter-spacing:-0.03em;line-height:1">800 → <span style="color:#C2185B">95,2 mil</span></span></div>
-      <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:24px;color:#5B4766">Publicações</span><span style="font-size:72px;font-weight:700;letter-spacing:-0.03em;line-height:1">58 → <span style="color:#C2185B">1.117</span></span></div>
-      <div style="display:flex;flex-direction:column;gap:6px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:24px;color:#5B4766">Visualizações nos últimos 30 dias</span><span style="font-size:72px;font-weight:700;letter-spacing:-0.03em;line-height:1;color:#C2185B">2,7 mi</span></div>
-    </div>
-  </div>
-  <div style="display:flex;gap:56px;justify-content:center">
-    <div style="display:flex;flex-direction:column;gap:20px;align-items:center">
-      <span style="font-size:24px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;background:#FFFFFF;color:#2B1838;border-radius:999px;padding:8px 22px">Antes</span>
-      <div style="width:380px;height:822px;border-radius:44px;overflow:hidden;position:relative;border:10px solid #0E0E10;box-shadow:0 40px 80px -40px rgba(43,24,56,0.45)"><image-slot id="vite-antes" shape="rect" src="/assets/3577ada5.jpg" placeholder="Print do perfil"></image-slot></div>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:20px;align-items:center">
-      <span style="font-size:24px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;background:#F2619C;color:#2B1838;border-radius:999px;padding:8px 22px">Atualmente</span>
-      <div style="width:380px;height:822px;border-radius:44px;overflow:hidden;position:relative;border:10px solid #0E0E10;box-shadow:0 40px 80px -40px rgba(43,24,56,0.45)"><image-slot id="vite-depois" shape="rect" src="/assets/3c45a017.jpg" placeholder="Print do perfil"></image-slot></div>
+    <div class="logos rv">
+      <img src="/assets/0cd7c7ed.png" alt="Vitê" loading="lazy">
+      <img src="/assets/c01febfb.png" alt="nano4you" loading="lazy">
+      <img src="/assets/4a22de3e.png" alt="FGV" loading="lazy">
+      <img src="/assets/741d2ff0.png" alt="Anytime Travel Agency" loading="lazy">
+      <img src="/assets/a8e25a07.png" alt="Birô do Uniforme" loading="lazy">
+      <img src="/assets/0dc471ec.png" alt="Fundação Cesgranrio" loading="lazy">
+      <img src="/assets/946d8e03.png" alt="Wap" loading="lazy">
+      <img src="/assets/34de4d8e.png" alt="UniFil" loading="lazy">
+      <img src="/assets/15d77c35.png" alt="Miss Cake" loading="lazy">
+      <img src="/assets/b8fc5737.png" alt="Kopenhagen" loading="lazy">
     </div>
   </div>
 </section>
 
-<section data-label="Vitê TikTok Shop" data-screen-label="Vitê TikTok Shop" style="background:#93ABD9;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:96px 120px;display:grid;grid-template-columns:1fr 1fr 420px;gap:80px;align-items:center" data-om-slide-id="b1032029">
-  <div style="display:flex;flex-direction:column;gap:32px">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase">Vitê · Marketplace</span>
-    <h2 style="margin:0;font-size:104px;line-height:0.92;font-weight:700;letter-spacing:-0.035em">Gestão da <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">TikTok Shop</span></h2>
-    <p style="margin:0;font-size:30px;line-height:1.45;text-wrap:pretty">Estruturei a loja da Vitê no TikTok Shop, do cadastro dos produtos às copies de cada anúncio.</p>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:24px">
-    <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:24px">01</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:32px;font-weight:700;letter-spacing:-0.01em">Cadastro de produtos</span><span style="font-size:24px;line-height:1.4;color:#3E2E4C">Estruturação da loja e cadastro do catálogo.</span></div></div>
-    <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:24px">02</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:32px;font-weight:700;letter-spacing:-0.01em">Otimização das copies</span><span style="font-size:24px;line-height:1.4;color:#3E2E4C">Títulos e descrições pensados para busca e conversão.</span></div></div>
-    <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;border-top:2px solid #2B1838;padding-top:20px"><span style="font-size:24px">03</span><div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:32px;font-weight:700;letter-spacing:-0.01em">Produto campeão</span><span style="font-size:24px;line-height:1.4;color:#3E2E4C">PURE Prímula+ se tornou o mais vendido da loja.</span></div></div>
-  </div>
-  <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;box-sizing:border-box;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.5);justify-self:end"><div style="flex:1;border-radius:44px;overflow:hidden;position:relative"><image-slot id="vite-tiktokshop" shape="rect" src="/assets/60f71605.jpg" placeholder="Print da TikTok Shop"></image-slot></div></div>
-</section>
-
-<section data-label="Vitê crescimento da loja" data-screen-label="Vitê crescimento da loja" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:96px 120px;display:grid;grid-template-columns:1fr 680px;gap:100px" data-om-slide-id="1795d869">
-  <div style="display:flex;flex-direction:column;justify-content:center;gap:64px">
-    <div style="display:flex;flex-direction:column;gap:28px">
-      <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Vitê · Loja virtual</span>
-      <h2 style="margin:0;font-size:104px;line-height:0.92;font-weight:700;letter-spacing:-0.035em">Crescimento <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#C2185B">da loja</span></h2>
-      <p style="margin:0;font-size:28px;color:#3E2E4C">Maio de 2026 comparado a maio de 2023</p>
-      <p style="margin:0;font-size:30px;line-height:1.45;text-wrap:pretty;max-width:900px">Estratégias alinhadas ao propósito da marca que aumentaram não só os seguidores, mas o faturamento da empresa.</p>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:20px"><span style="font-size:24px;font-weight:600">O que gerou esse crescimento</span><div style="display:flex;flex-wrap:wrap;gap:12px"><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Estruturação do site Shopify</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Collabs estratégicas</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Lançamento de produtos</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Campanhas</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Tráfego pago</span></div></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
-      <div style="display:flex;flex-direction:column;gap:8px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:72px;font-weight:700;letter-spacing:-0.035em;line-height:1;white-space:nowrap">+11,5 mil%</span><span style="font-size:26px;line-height:1.35;color:#3E2E4C">em vendas totais</span></div>
-      <div style="display:flex;flex-direction:column;gap:8px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:72px;font-weight:700;letter-spacing:-0.035em;line-height:1;white-space:nowrap">+8,9 mil%</span><span style="font-size:26px;line-height:1.35;color:#3E2E4C">em número de pedidos</span></div>
-      <div style="display:flex;flex-direction:column;gap:8px;border-top:2px solid #2B1838;padding-top:24px"><span style="font-size:72px;font-weight:700;letter-spacing:-0.035em;line-height:1;white-space:nowrap">+244%</span><span style="font-size:26px;line-height:1.35;color:#3E2E4C">na taxa de clientes recorrentes</span></div>
-    </div>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:24px;justify-content:flex-end">
-    <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;border-bottom:2px solid #2B1838">
-      <div style="display:flex;flex-direction:column;gap:16px;align-items:stretch"><div data-bar="1" style="height:8px;background:#93ABD9;border-radius:12px 12px 0 0;transform-origin:bottom center"></div></div>
-      <div style="display:flex;flex-direction:column;gap:16px;align-items:stretch;height:100%;justify-content:flex-end"><div data-bar="1" style="height:92%;background:#F2619C;border-radius:12px 12px 0 0;transform-origin:bottom center"></div></div>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;font-size:28px;font-weight:600"><span>Mai 2023</span><span>Mai 2026</span></div>
-    <span style="font-size:24px;color:#3E2E4C">Vendas totais em escala proporcional</span>
-  </div>
-</section>
-
-<section data-label="Anytime" data-screen-label="Anytime" style="background:#93ABD9;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:96px 120px;display:grid;grid-template-columns:1fr 900px;gap:64px;align-items:center" data-om-slide-id="86eb7413">
-  <div style="display:flex;flex-direction:column;gap:48px">
-    <img src="/assets/d8eca491.png" alt="Anytime" style="height:110px;width:auto;display:block;align-self:flex-start">
-    <div style="display:flex;flex-direction:column;gap:20px">
-      <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#2B1838">Agência de viagens · Canadá</span>
-      <p style="margin:0;font-size:30px;line-height:1.45;text-wrap:pretty;max-width:820px">Criação da identidade visual, gestão das redes sociais e das parcerias com influenciadoras e collabs para uma agência de viagens do Canadá, com parte dos posts em formato bilíngue.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;gap:12px"><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Identidade visual</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Social media</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Influenciadoras</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Collabs</span><span style="font-size:24px;border:2px solid #2B1838;border-radius:999px;padding:8px 22px">Conteúdo bilíngue</span></div>
-  </div>
-  <div style="display:flex;gap:32px;align-items:center">
-    <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;box-sizing:border-box;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.5)"><div style="flex:1;border-radius:44px;overflow:hidden;position:relative"><image-slot id="anytime-perfil" shape="rect" src="/assets/909d25df.jpg" placeholder="Print do perfil"></image-slot></div></div>
-    <div style="width:528px;height:736px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:24px"><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-post-1" shape="rect" src="/assets/9e0a6afa.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-kv" shape="rect" src="/assets/e7195d51.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-post-2" shape="rect" src="/assets/9a866d20.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-1" shape="rect" src="/assets/2a2f1d91.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-2" shape="rect" src="/assets/a8e00061.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-3" shape="rect" src="/assets/9e6424d2.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-4" shape="rect" src="/assets/44280865.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-5" shape="rect" src="/assets/1c30ec3f.jpg" placeholder="Post"></image-slot></div><div style="border-radius:16px;overflow:hidden;position:relative;box-shadow:0 20px 40px -28px rgba(43,24,56,0.5)"><image-slot id="anytime-feed-6" shape="rect" src="/assets/cbf55c80.jpg" placeholder="Post"></image-slot></div></div>
-  </div>
-</section>
-
-<section data-label="Tráfego pago" data-screen-label="12 Tráfego pago" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:96px 120px;display:flex;flex-direction:column;gap:56px" data-om-slide-id="1c1f6d8f">
-  <div style="display:flex;justify-content:space-between;align-items:flex-end">
-    <h2 style="margin:0;font-size:96px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">Resultados <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">com tráfego pago</span></h2>
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Performance</span>
-  </div>
-  <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:48px">
-    <div style="background:#FFFFFF;border:1px solid #2B183833;border-radius:28px;padding:44px;display:flex;flex-direction:column;gap:36px;box-shadow:0 1px 0 #2B183833,0 24px 48px -32px rgba(18,17,16,0.25)">
-      <div style="display:flex;justify-content:space-between;align-items:center"><div style="display:flex;align-items:center;gap:14px"><span style="width:12px;height:12px;border-radius:999px;background:#2B1838"></span><span style="font-size:24px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase">Campanha 01</span></div><span style="font-size:24px;font-weight:600;background:#2B1838;color:#FFF8EE;border-radius:999px;padding:8px 20px">ROI ≈75x</span></div>
-      <div style="display:flex;align-items:baseline;gap:16px"><span style="font-size:96px;font-weight:700;letter-spacing:-0.04em;line-height:1">R$10 mil</span><span style="font-size:28px;color:#5B4766">de retorno</span></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:24px;font-weight:600">Investimento x retorno</span><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Investido</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:1.5%;height:100%;transform-origin:left center;background:#93ABD9;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">R$133,91</span></div><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Retorno</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:62.5%;height:100%;transform-origin:left center;background:#F2619C;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">R$10 mil</span></div></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:24px;font-weight:600">Funil</span><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Leads</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:63%;height:100%;transform-origin:left center;background:#93ABD9;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">86</span></div><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Pacientes</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:4%;height:100%;transform-origin:left center;background:#F2619C;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">5</span></div></div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #2B183833;padding-top:28px;margin-top:auto">
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:24px;color:#5B4766">Custo por lead</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">R$1,56</span></div>
-        <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #2B183833;padding-left:28px"><span style="font-size:24px;color:#5B4766">Conversão</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">5,8%</span></div>
-        <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #2B183833;padding-left:28px"><span style="font-size:24px;color:#5B4766">Ticket médio</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">R$2.000</span></div>
+<!-- CASE VITÊ -->
+<section class="bg-lilac" id="cases" style="padding-top:0">
+  <div class="wrap case">
+    <div class="rv">
+      <p class="eyebrow">Saúde e beleza · 2023 — Atual</p>
+      <img class="case-logo" src="/assets/10807046.png" alt="Vitê" loading="lazy">
+      <p class="lead">Como especialista em comunicação de marketing, cuido da estratégia da marca de ponta a ponta: do reposicionamento às campanhas, das influenciadoras ao site e à TikTok Shop.</p>
+      <ul class="tags"><li>Branding</li><li>Campanhas</li><li>Influenciadoras</li><li>Social media</li><li>CRM</li><li>Site</li><li>TikTok Shop</li></ul>
+      <div class="mini-stats">
+        <div><span class="num">95,2 mil</span><p>seguidores</p></div>
+        <div><span class="num">1.117</span><p>publicações</p></div>
+        <div><span class="num">2,7 mi</span><p>visualizações em 30 dias</p></div>
       </div>
     </div>
-    <div style="background:#FFFFFF;border:1px solid #2B183833;border-radius:28px;padding:44px;display:flex;flex-direction:column;gap:36px;box-shadow:0 1px 0 #2B183833,0 24px 48px -32px rgba(18,17,16,0.25)">
-      <div style="display:flex;justify-content:space-between;align-items:center"><div style="display:flex;align-items:center;gap:14px"><span style="width:12px;height:12px;border-radius:999px;background:#2B1838"></span><span style="font-size:24px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase">Campanha 02</span></div><span style="font-size:24px;font-weight:600;background:#2B1838;color:#FFF8EE;border-radius:999px;padding:8px 20px">ROI +119x</span></div>
-      <div style="display:flex;align-items:baseline;gap:16px"><span style="font-size:96px;font-weight:700;letter-spacing:-0.04em;line-height:1">R$16 mil</span><span style="font-size:28px;color:#5B4766">+ de retorno</span></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:24px;font-weight:600">Investimento x retorno</span><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Investido</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:1.5%;height:100%;transform-origin:left center;background:#93ABD9;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">R$133,98</span></div><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Retorno</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:100%;height:100%;transform-origin:left center;background:#F2619C;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">R$16 mil</span></div></div>
-      <div style="display:flex;flex-direction:column;gap:16px"><span style="font-size:24px;font-weight:600">Funil</span><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Leads</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:100%;height:100%;transform-origin:left center;background:#93ABD9;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">136</span></div><div style="display:grid;grid-template-columns:170px 1fr 150px;gap:20px;align-items:center"><span style="font-size:24px;color:#5B4766">Pacientes</span><div style="height:28px;background:#2B18381A;border-radius:8px;overflow:hidden"><div data-bar="1" style="width:15%;height:100%;transform-origin:left center;background:#F2619C;border-radius:8px"></div></div><span style="font-size:26px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums">20</span></div></div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #2B183833;padding-top:28px;margin-top:auto">
-        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:24px;color:#5B4766">Custo por lead</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">R$0,99</span></div>
-        <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #2B183833;padding-left:28px"><span style="font-size:24px;color:#5B4766">Conversão</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">14,7%</span></div>
-        <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #2B183833;padding-left:28px"><span style="font-size:24px;color:#5B4766">Ticket médio</span><span style="font-size:40px;font-weight:700;letter-spacing:-0.02em">R$800</span></div>
+    <div class="case-media rv">
+      <div class="phone"><img src="/assets/3c45a017.jpg" alt="Perfil @minhavite no Instagram com 95,2 mil seguidores" loading="lazy"></div>
+      <div class="stack">
+        <div class="creators"><img src="/assets/22abc32c.jpg" alt="Mosaico de creators com produtos da Vitê" loading="lazy"><span class="pill">GESTÃO DE CREATORS</span></div>
+        <div class="posts">
+          <img src="/assets/b39c45a3.jpg" alt="Post Vitê: corpo inflamado não emagrece" loading="lazy">
+          <img src="/assets/28a5680f.jpg" alt="Post Vitê: creatina energy shot" loading="lazy">
+          <img src="/assets/5a2d7617.jpg" alt="Post Vitê: cupom + brinde" loading="lazy">
+          <img src="/assets/aba8e5b6.jpg" alt="Post Vitê: a canetinha cortou sua fome e os nutrientes?" loading="lazy">
+          <img src="/assets/e1aee339.jpg" alt="Creator com produto Vitê" loading="lazy">
+          <img src="/assets/453b8934.jpg" alt="Creator segurando sachê Vitê" loading="lazy">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section data-om-raster="1" data-label="Soluções digitais" data-screen-label="13 Soluções digitais" style="background:#EDE986;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:80px 120px;display:grid;grid-template-columns:520px 1fr;gap:80px" data-om-slide-id="e8f8c38f">
-  <div style="display:flex;flex-direction:column;justify-content:space-between">
-    <div style="display:flex;flex-direction:column;gap:32px">
-      <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Soluções digitais</span>
-      <h2 style="margin:0;font-size:96px;line-height:0.92;font-weight:700;letter-spacing:-0.035em">Marketing que vira <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#C2185B">sistema</span></h2>
-      <p style="margin:0;font-size:28px;line-height:1.45;text-wrap:pretty">Quando a estratégia pede uma ferramenta, eu crio. Sem ser desenvolvedora, uso a tecnologia para automatizar processos, organizar dados e aproximar marca e comunidade.</p>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid #2B1838;padding-top:24px">
-      <span style="font-size:24px;color:#C2185B">03</span>
-      <h3 style="margin:0;font-size:36px;font-weight:700;letter-spacing:-0.015em">Aplicativos e automações</h3>
-      <p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Desenvolvo aplicativos e ferramentas práticas que tiram ideias do papel e economizam tempo da equipe.</p>
-    </div>
-  </div>
-  <div style="display:flex;flex-direction:column;justify-content:center;gap:40px">
-    <div style="display:grid;grid-template-columns:640px 1fr;gap:48px;align-items:center">
-      <div style="border-radius:16px;overflow:hidden;background:#FFFFFF;box-shadow:0 24px 48px -28px rgba(43,24,56,0.45);border:1px solid #2B183826">
-        <div style="height:36px;display:flex;align-items:center;gap:8px;padding:0 16px;background:#F4EEF2;border-bottom:1px solid #2B18381A"><span style="width:10px;height:10px;border-radius:999px;background:#F2619C"></span><span style="width:10px;height:10px;border-radius:999px;background:#EDE986;border:1px solid #2B183826"></span><span style="width:10px;height:10px;border-radius:999px;background:#93ABD9"></span><span style="margin-left:16px;font-size:16px;color:#5B4766">creatorsvite.vercel.app</span></div>
-        <div style="width:640px;height:360px;position:relative"><image-slot id="sistema-1" shape="rect" src="/assets/5ab7a98f.jpg" placeholder="Print do site"></image-slot></div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:16px">
-        <span style="font-size:24px;color:#C2185B">01</span>
-        <h3 style="margin:0;font-size:40px;font-weight:700;letter-spacing:-0.015em;line-height:1.1">Canal de cadastro de influenciadoras</h3>
-        <p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Criei um canal para influenciadoras se cadastrarem direto com a marca. Os dados vão automaticamente para uma planilha, facilitando a seleção e a gestão das parcerias.</p>
+<!-- ANTES E DEPOIS -->
+<section class="bg-yellow">
+  <div class="wrap ba">
+    <div class="rv">
+      <p class="eyebrow">Case @minhavite</p>
+      <h2 class="h-lg">Vitê, <em>antes e depois</em></h2>
+      <div class="ba-rows">
+        <div class="ba-row"><p>Seguidores</p><div class="num">800 <span class="arrow">→</span> <span class="to">95,2 mil</span></div></div>
+        <div class="ba-row"><p>Publicações</p><div class="num">58 <span class="arrow">→</span> <span class="to">1.117</span></div></div>
+        <div class="ba-row"><p>Visualizações nos últimos 30 dias</p><div class="num to">2,7 mi</div></div>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:640px 1fr;gap:48px;align-items:center">
-      <div style="border-radius:16px;overflow:hidden;background:#FFFFFF;box-shadow:0 24px 48px -28px rgba(43,24,56,0.45);border:1px solid #2B183826">
-        <div style="height:36px;display:flex;align-items:center;gap:8px;padding:0 16px;background:#F4EEF2;border-bottom:1px solid #2B18381A"><span style="width:10px;height:10px;border-radius:999px;background:#F2619C"></span><span style="width:10px;height:10px;border-radius:999px;background:#EDE986;border:1px solid #2B183826"></span><span style="width:10px;height:10px;border-radius:999px;background:#93ABD9"></span><span style="margin-left:16px;font-size:16px;color:#5B4766">projetoveraovite.vercel.app</span></div>
-        <div style="width:640px;height:360px;position:relative"><image-slot id="sistema-2" shape="rect" src="/assets/fd63c4f2.jpg" placeholder="Print do site"></image-slot></div>
+    <div class="ba-phones rv">
+      <figure><figcaption>ANTES</figcaption><div class="phone"><img src="/assets/3577ada5.jpg" alt="Perfil @minhavite antes: 800 seguidores" loading="lazy"></div></figure>
+      <figure><figcaption>ATUALMENTE</figcaption><div class="phone"><img src="/assets/3c45a017.jpg" alt="Perfil @minhavite atualmente: 95,2 mil seguidores" loading="lazy"></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TIKTOK SHOP -->
+<section class="bg-blue">
+  <div class="wrap split">
+    <div class="rv">
+      <p class="eyebrow" style="color:var(--ink)">Vitê · Marketplace</p>
+      <h2 class="h-md">Gestão da <em>TikTok Shop</em></h2>
+      <p class="lead" style="margin-top:28px">Estruturei a loja da Vitê no TikTok Shop, do cadastro dos produtos às copies de cada anúncio.</p>
+    </div>
+    <ol class="steps rv">
+      <li><span class="n">01</span><div><h3>Cadastro de produtos</h3><p>Estruturação da loja e cadastro do catálogo.</p></div></li>
+      <li><span class="n">02</span><div><h3>Otimização das copies</h3><p>Títulos e descrições pensados para busca e conversão.</p></div></li>
+      <li><span class="n">03</span><div><h3>Produto campeão</h3><p>PURE Prímula+ se tornou o mais vendido da loja.</p></div></li>
+    </ol>
+    <div class="phone rv"><img src="/assets/60f71605.jpg" alt="Loja Vitê Vitaminas no TikTok Shop" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- CRESCIMENTO -->
+<section class="bg-cream">
+  <div class="wrap growth">
+    <div class="rv">
+      <p class="eyebrow">Vitê · Loja virtual</p>
+      <h2 class="h-lg">Crescimento <em>da loja</em></h2>
+      <p class="sub">Maio de 2026 comparado a maio de 2023</p>
+      <p class="lead">Estratégias alinhadas ao propósito da marca que aumentaram não só os seguidores, mas o faturamento da empresa.</p>
+      <p class="what">O que gerou esse crescimento</p>
+      <ul class="tags"><li>Estruturação do site Shopify</li><li>Collabs estratégicas</li><li>Lançamento de produtos</li><li>Campanhas</li><li>Tráfego pago</li></ul>
+      <div class="big3">
+        <div><span class="num">+11,5 mil%</span><p>em vendas totais</p></div>
+        <div><span class="num">+8,9 mil%</span><p>em número de pedidos</p></div>
+        <div><span class="num">+244%</span><p>na taxa de clientes recorrentes</p></div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:16px">
-        <span style="font-size:24px;color:#C2185B">02</span>
-        <h3 style="margin:0;font-size:40px;font-weight:700;letter-spacing:-0.015em;line-height:1.1">Desafio de comunidade</h3>
-        <p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Para gerar comunidade em torno da marca, idealizei um desafio e desenvolvi o sistema de inscrição dos participantes.</p>
+    </div>
+    <div class="rv">
+      <div class="chart" role="img" aria-label="Gráfico de barras: vendas de maio de 2026 são cerca de 116 vezes as de maio de 2023">
+        <div class="bar a"></div><div class="bar b"></div>
+      </div>
+      <div class="chart-labels"><span>Mai 2023</span><span>Mai 2026</span></div>
+      <p class="chart-note">Vendas totais em escala proporcional</p>
+    </div>
+  </div>
+</section>
+
+<!-- ANYTIME -->
+<section class="bg-blue">
+  <div class="wrap any">
+    <div class="rv">
+      <img class="any-logo" src="/assets/d8eca491.png" alt="Anytime Travel Agency" loading="lazy">
+      <p class="eyebrow">Agência de viagens · Canadá</p>
+      <p class="lead">Criação da identidade visual, gestão das redes sociais e das parcerias com influenciadoras e collabs para uma agência de viagens do Canadá, com parte dos posts em formato bilíngue.</p>
+      <ul class="tags"><li>Identidade visual</li><li>Social media</li><li>Influenciadoras</li><li>Collabs</li><li>Conteúdo bilíngue</li></ul>
+    </div>
+    <div class="any-media rv">
+      <div class="phone"><img src="/assets/909d25df.jpg" alt="Perfil @anytimefly_ no Instagram" loading="lazy"></div>
+      <div class="posts">
+        <img src="/assets/9e0a6afa.jpg" alt="Post Anytime: o que fazer no Rio de Janeiro" loading="lazy">
+        <img src="/assets/e7195d51.jpg" alt="Identidade visual Anytime" loading="lazy">
+        <img src="/assets/9a866d20.jpg" alt="Post Anytime: depoimento de cliente" loading="lazy">
+        <img src="/assets/2a2f1d91.jpg" alt="Post Anytime: it's time to travel" loading="lazy">
+        <img src="/assets/a8e00061.jpg" alt="Post Anytime: um dia em Paris" loading="lazy">
+        <img src="/assets/9e6424d2.jpg" alt="Post Anytime: um dia em Tokyo" loading="lazy">
+        <img src="/assets/44280865.jpg" alt="Post Anytime: promoção Miami" loading="lazy">
+        <img src="/assets/1c30ec3f.jpg" alt="Post Anytime: promoção Rio de Janeiro" loading="lazy">
+        <img src="/assets/cbf55c80.jpg" alt="Post Anytime: promoção Orlando" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section data-label="Trabalhos entregues" data-screen-label="10 Trabalhos" style="background:#FFF8EE;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:grid;grid-template-columns:520px 1fr;gap:80px" data-om-slide-id="4a765bae">
-  <div style="display:flex;flex-direction:column;justify-content:space-between">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#C2185B">Portfólio</span>
-    <div style="display:flex;flex-direction:column;gap:32px">
-      <h2 style="margin:0;font-size:96px;line-height:0.95;font-weight:700;letter-spacing:-0.035em">Exemplos de perfis <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">gerenciados</span></h2>
-      <p style="margin:0;font-size:28px;line-height:1.45;text-wrap:pretty">Todos os perfis recebem estratégias e cuidados personalizados, ajustados periodicamente em colaboração com a marca, visando alcançar os melhores resultados possíveis!</p>
+<!-- RESULTADOS -->
+<section class="bg-cream" id="resultados">
+  <div class="wrap">
+    <div class="res-head rv">
+      <h2 class="h-lg">Resultados <em>com tráfego pago</em></h2>
+      <p class="eyebrow" style="margin:0">Performance</p>
     </div>
-  </div>
-  <div style="display:flex;gap:40px;justify-content:center;align-items:flex-start">
-    <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.45);margin-top:0px">
-      <div style="flex:1;border-radius:44px;overflow:hidden;position:relative;background:#2B18381A"><image-slot id="perfil-1" shape="rect" src="/assets/34501163.jpg" placeholder="Print do perfil"></image-slot></div>
-    </div>
-    <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.45);margin-top:80px">
-      <div style="flex:1;border-radius:44px;overflow:hidden;position:relative;background:#2B18381A"><image-slot id="perfil-2" shape="rect" src="/assets/3c45a017.jpg" placeholder="Print do perfil"></image-slot></div>
-    </div>
-    <div style="width:340px;height:736px;background:#0E0E10;border-radius:56px;padding:12px;display:flex;box-shadow:0 40px 80px -40px rgba(43,24,56,0.45);margin-top:0px">
-      <div style="flex:1;border-radius:44px;overflow:hidden;position:relative;background:#2B18381A"><image-slot id="perfil-3" shape="rect" src="/assets/909d25df.jpg" placeholder="Print do perfil"></image-slot></div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="card-top"><span class="lab">CAMPANHA 01</span><span class="roi">ROI ≈75x</span></div>
+        <div class="big"><span class="num">R$10 mil</span><span>de retorno</span></div>
+        <h4>Investimento x retorno</h4>
+        <div class="meter"><span>Investido</span><div class="track"><div class="fill b" style="width:1.3%"></div></div><b>R$133,91</b></div>
+        <div class="meter"><span>Retorno</span><div class="track"><div class="fill p" style="width:62.5%"></div></div><b>R$10 mil</b></div>
+        <h4>Funil</h4>
+        <div class="meter"><span>Leads</span><div class="track"><div class="fill b" style="width:63%"></div></div><b>86</b></div>
+        <div class="meter"><span>Pacientes</span><div class="track"><div class="fill p" style="width:4%"></div></div><b>5</b></div>
+        <div class="kpis"><div><p>Custo por lead</p><div class="num">R$1,56</div></div><div><p>Conversão</p><div class="num">5,8%</div></div><div><p>Ticket médio</p><div class="num">R$2.000</div></div></div>
+      </article>
+      <article class="card rv">
+        <div class="card-top"><span class="lab">CAMPANHA 02</span><span class="roi">ROI +119x</span></div>
+        <div class="big"><span class="num">R$16 mil</span><span>+ de retorno</span></div>
+        <h4>Investimento x retorno</h4>
+        <div class="meter"><span>Investido</span><div class="track"><div class="fill b" style="width:1.3%"></div></div><b>R$133,98</b></div>
+        <div class="meter"><span>Retorno</span><div class="track"><div class="fill p" style="width:100%"></div></div><b>R$16 mil</b></div>
+        <h4>Funil</h4>
+        <div class="meter"><span>Leads</span><div class="track"><div class="fill b" style="width:100%"></div></div><b>136</b></div>
+        <div class="meter"><span>Pacientes</span><div class="track"><div class="fill p" style="width:15%"></div></div><b>20</b></div>
+        <div class="kpis"><div><p>Custo por lead</p><div class="num">R$0,99</div></div><div><p>Conversão</p><div class="num">14,7%</div></div><div><p>Ticket médio</p><div class="num">R$800</div></div></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section data-label="Galeria de trabalhos" data-screen-label="Galeria" style="background:#93ABD9;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:grid;grid-template-columns:1fr 840px;gap:120px" data-om-slide-id="1a79a14f">
-  <div style="display:flex;flex-direction:column;justify-content:space-between">
-    <span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#5B4766">Portfólio</span>
-    <h2 style="margin:0;font-size:112px;line-height:0.95;font-weight:700;letter-spacing:-0.035em;text-wrap:balance">Exemplos de trabalhos <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:#2B1838">entregues</span></h2>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(4,198px);grid-template-rows:repeat(4,198px);gap:16px;align-content:center;justify-content:end"><div style="position:relative;border-radius:14px;overflow:hidden;grid-column:span 2;grid-row:span 2"><image-slot id="galeria-1" shape="rect" src="/assets/3bcd1d61.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-2" shape="rect" src="/assets/2763ca00.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-3" shape="rect" src="/assets/e1483ec4.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-4" shape="rect" src="/assets/4b8b00bb.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-5" shape="rect" src="/assets/3c9969b3.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-6b" shape="rect" src="/assets/175082bb.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-7" shape="rect" src="/assets/2ba7178b.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-8" shape="rect" src="/assets/2375bee3.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-9" shape="rect" src="/assets/597817a6.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-10" shape="rect" src="/assets/3fd9e659.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-11" shape="rect" src="/assets/5cc54baf.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-12" shape="rect" src="/assets/af81e3d2.jpg" placeholder="Trabalho"></image-slot></div><div style="position:relative;border-radius:14px;overflow:hidden"><image-slot id="galeria-13" shape="rect" src="/assets/38fc293b.jpg" placeholder="Trabalho"></image-slot></div></div>
-</section>
-
-<section data-label="Objetivo" data-screen-label="06 Objetivo" style="background:#F2619C;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:flex;flex-direction:column;justify-content:space-between" data-om-slide-id="d8b19531">
-  <div style="display:flex;gap:24px;font-size:30px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em">
-    <span style="border:2px solid #2B1838;border-radius:999px;padding:14px 32px">conexão</span>
-    <span style="border:2px solid #2B1838;border-radius:999px;padding:14px 32px">estratégia</span>
-    <span style="border:2px solid #2B1838;border-radius:999px;padding:14px 32px">criatividade</span>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:32px">
-    <span style="font-size:28px;letter-spacing:0.08em;text-transform:uppercase">Objetivos:</span>
-    <p style="margin:0;font-size:80px;line-height:1.05;font-weight:700;letter-spacing:-0.03em;max-width:1400px;text-wrap:pretty">Conectar marcas e pessoas de forma autêntica e significativa com estratégias sob medida para <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">cada marca, cada desafio!</span></p>
-  </div>
-</section>
-
-<section data-label="Contato" data-screen-label="18 Contato" style="background:#E7BEF8;color:#2B1838;font-family:'Bricolage Grotesque',sans-serif;padding:120px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden" data-om-slide-id="fa9ad04f">
-  <div style="display:flex;justify-content:space-between;font-size:24px;letter-spacing:0.08em;text-transform:uppercase"><span>Victoria Xavier</span><span>Contato</span></div>
-  <div style="display:flex;flex-direction:column;gap:40px">
-    <h2 style="margin:0;font-size:150px;line-height:0.9;font-weight:700;letter-spacing:-0.045em;text-wrap:balance">Vamos construir algo <span style="font-family:'Instrument Serif',serif;font-style:italic;font-weight:400">incrível</span> juntas?</h2>
-    <p style="margin:0;font-size:36px;line-height:1.4;max-width:1200px;text-wrap:pretty">Independente do desafio, estou pronta! Quero muito fazer parte do time e poder somar :)</p>
-  </div>
-  <div style="display:flex;align-items:center;justify-content:space-between;gap:48px">
-    <a href="mailto:contatovictoriacxavier@gmail.com?subject=Portf%C3%B3lio%20Victoria%20Xavier%20%C2%B7%20CUFF" style="display:flex;align-items:center;gap:40px;background:#2B1838;color:#FFF8EE;text-decoration:none;border-radius:999px;padding:28px 28px 28px 56px" style-hover="background:#C2185B">
-      <span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:24px;letter-spacing:0.08em;text-transform:uppercase;color:#EDE986">Me mande um e-mail</span><span style="font-size:48px;font-weight:600;letter-spacing:-0.01em">contatovictoriacxavier@gmail.com</span></span>
-      <span style="width:104px;height:104px;border-radius:999px;background:#EDE986;color:#2B1838;display:flex;align-items:center;justify-content:center;font-size:52px">→</span>
-    </a>
-    <span style="font-size:28px;text-align:right;line-height:1.4">Marketing · Branding<br>Performance · Influência</span>
+<!-- SISTEMAS -->
+<section class="bg-yellow" id="sistemas">
+  <div class="wrap sys">
+    <div class="rv">
+      <p class="eyebrow">Soluções digitais</p>
+      <h2 class="h-md">Marketing que vira <em>sistema</em></h2>
+      <p class="lead">Quando a estratégia pede uma ferramenta, eu crio. Sem ser desenvolvedora, uso a tecnologia para automatizar processos, organizar dados e aproximar marca e comunidade.</p>
+      <div class="feat" style="margin-top:clamp(40px,5vw,80px)"><p class="n">03</p><h3>Aplicativos e automações</h3><p>Desenvolvo aplicativos e ferramentas práticas que tiram ideias do papel e economizam tempo da equipe.</p></div>
+    </div>
+    <div class="browsers rv">
+      <div class="browser"><div class="bar-top"><i></i><i></i><i></i>creatorsvite.vercel.app</div><img src="/assets/5ab7a98f.jpg" alt="Site creatorsvite: canal de cadastro de influenciadoras" loading="lazy"></div>
+      <div class="browser"><div class="bar-top"><i></i><i></i><i></i>projetoveraovite.vercel.app</div><img src="/assets/fd63c4f2.jpg" alt="Site projetoveraovite: desafio de 21 dias" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <div class="feat"><p class="n">01</p><h3>Canal de cadastro de influenciadoras</h3><p>Criei um canal para influenciadoras se cadastrarem direto com a marca. Os dados vão automaticamente para uma planilha, facilitando a seleção e a gestão das parcerias.</p><a href="https://creatorsvite.vercel.app" target="_blank" rel="noopener">Ver projeto ↗</a></div>
+      <div class="feat"><p class="n">02</p><h3>Desafio de comunidade</h3><p>Para gerar comunidade em torno da marca, idealizei um desafio e desenvolvi o sistema de inscrição dos participantes.</p><a href="https://projetoveraovite.vercel.app" target="_blank" rel="noopener">Ver projeto ↗</a></div>
+    </div>
   </div>
 </section>
 
-</x-import>
-</x-dc>
-<script type="text/x-dc" data-dc-script="">
-class Component extends DCLogic {
-  componentDidMount() {
-    this.onChange = (e) => this.play(e.detail && e.detail.slide);
-    document.addEventListener('slidechange', this.onChange);
-    this.t = setTimeout(() => this.play(document.querySelector('section[data-deck-active]')), 400);
-  }
-  componentWillUnmount() { document.removeEventListener('slidechange', this.onChange); clearTimeout(this.t); }
-  play(slide) {
-    if (!slide || !slide.animate || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const ease = 'cubic-bezier(.2,.7,.2,1)';
-    const items = [];
-    [...slide.children].forEach(c => { const k = [...c.children]; (k.length > 1 && k.length < 7 ? k : [c]).forEach(x => items.push(x)); });
-    items.forEach((el, i) => el.animate([{ opacity: 0, transform: 'translateY(48px)' }, { opacity: 1, transform: 'none' }], { duration: 800, delay: i * 90, easing: ease, fill: 'backwards' }));
-    slide.querySelectorAll('[data-bar]').forEach((el, i) => el.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: 1100, delay: 450 + i * 120, easing: ease, fill: 'backwards' }));
-  }
-  renderVals() { return {}; }
-}
+<!-- PERFIS -->
+<section class="bg-cream">
+  <div class="wrap profiles">
+    <div class="rv">
+      <p class="eyebrow">Portfólio</p>
+      <h2 class="h-lg">Exemplos de perfis <em>gerenciados</em></h2>
+      <p class="lead">Todos os perfis recebem estratégias e cuidados personalizados, ajustados periodicamente em colaboração com a marca, visando alcançar os melhores resultados possíveis!</p>
+    </div>
+    <div class="phones3 rv">
+      <div class="phone"><img src="/assets/34501163.jpg" alt="Perfil @nano4youbrasil com 96,4 mil seguidores" loading="lazy"></div>
+      <div class="phone"><img src="/assets/3c45a017.jpg" alt="Perfil @minhavite com 95,2 mil seguidores" loading="lazy"></div>
+      <div class="phone"><img src="/assets/909d25df.jpg" alt="Perfil @anytimefly_" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRABALHOS -->
+<section class="bg-blue" id="trabalhos">
+  <div class="wrap">
+    <div class="works-head rv">
+      <h2 class="h-lg">Exemplos de trabalhos <em>entregues</em></h2>
+      <p class="eyebrow muted" style="margin:0">Portfólio</p>
+    </div>
+    <div class="works rv">
+      <a class="w2" href="/assets/3bcd1d61.jpg" target="_blank"><img src="/assets/3bcd1d61.jpg" alt="Caixa Vitê sobre boia azul na piscina" loading="lazy"></a>
+      <a href="/assets/2763ca00.jpg" target="_blank"><img src="/assets/2763ca00.jpg" alt="Mão com pulseiras e anéis dourados" loading="lazy"></a>
+      <a href="/assets/e1483ec4.jpg" target="_blank"><img src="/assets/e1483ec4.jpg" alt="Pote PURE Hyaluronic com cápsulas" loading="lazy"></a>
+      <a href="/assets/4b8b00bb.jpg" target="_blank"><img src="/assets/4b8b00bb.jpg" alt="La Boë: fresh moments" loading="lazy"></a>
+      <a href="/assets/3c9969b3.jpg" target="_blank"><img src="/assets/3c9969b3.jpg" alt="Zion: your event, your way" loading="lazy"></a>
+      <a href="/assets/175082bb.jpg" target="_blank"><img src="/assets/175082bb.jpg" alt="Kit detox Vitê" loading="lazy"></a>
+      <a href="/assets/2ba7178b.jpg" target="_blank"><img src="/assets/2ba7178b.jpg" alt="La Boë dry gin" loading="lazy"></a>
+      <a href="/assets/2375bee3.jpg" target="_blank"><img src="/assets/2375bee3.jpg" alt="Garrafas La Boë" loading="lazy"></a>
+      <a href="/assets/597817a6.jpg" target="_blank"><img src="/assets/597817a6.jpg" alt="La Boë servida sobre tecido vermelho" loading="lazy"></a>
+      <a href="/assets/3fd9e659.jpg" target="_blank"><img src="/assets/3fd9e659.jpg" alt="Produto removedor de cimento" loading="lazy"></a>
+      <a href="/assets/5cc54baf.jpg" target="_blank"><img src="/assets/5cc54baf.jpg" alt="Post clínica odontológica: vamos cuidar do seu sorriso?" loading="lazy"></a>
+      <a href="/assets/af81e3d2.jpg" target="_blank"><img src="/assets/af81e3d2.jpg" alt="Produto sobre tecido prateado" loading="lazy"></a>
+      <a href="/assets/38fc293b.jpg" target="_blank"><img src="/assets/38fc293b.jpg" alt="The care your space deserves" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section class="bg-pink">
+  <div class="wrap goal">
+    <ul class="tags rv"><li>Conexão</li><li>Estratégia</li><li>Criatividade</li></ul>
+    <div class="rv">
+      <p class="eyebrow">Objetivos:</p>
+      <h2>Conectar marcas e pessoas de forma autêntica e significativa com estratégias sob medida para <em>cada marca, cada desafio!</em></h2>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="bg-lilac" id="contato">
+  <div class="wrap contact">
+    <div class="contact-top"><span>Victoria Xavier</span><span>Contato</span></div>
+    <h2 class="rv">Vamos construir algo <em>incrível</em> juntas?</h2>
+    <p class="lead rv">Independente do desafio, estou pronta! Me conta sobre a sua marca e vamos somar :)</p>
+    <div class="contact-row rv">
+      <a class="mail" href="mailto:contatovictoriacxavier@gmail.com?subject=Contato%20pelo%20site">
+        <span><small>Me mande um e-mail</small><b>contatovictoriacxavier@gmail.com</b></span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <p class="contact-right">Marketing · Branding<br>Performance · Influência</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Victoria Xavier</span><a href="#topo">Voltar ao topo ↑</a></div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rv,.chart,.card');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})
+  },{rootMargin:'0px 0px -10% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
 </script>
-
-
-</body></html>
+</body>
+</html>
