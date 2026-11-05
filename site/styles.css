@@ -312,7 +312,3 @@ fieldset.field{border:0;padding:0;margin:0}
 .form-status.err{display:block;background:#fde7ee;color:#8a1538}
 @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.form{grid-template-columns:1fr}}
-
-/* two-column variant of .models */
-.models.two{grid-template-columns:repeat(2,1fr)}
-@media (max-width:1000px){.models.two{grid-template-columns:1fr}}
