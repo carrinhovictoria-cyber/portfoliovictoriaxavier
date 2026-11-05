@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Out of the Box · Marketing estratégico</title>
-<meta name="description" content="Out of the Box é uma agência de marketing estratégico: branding, social media, tráfego pago, influência e sistemas para marcas que querem escalar o faturamento de verdade.">
+<title>Out of the Box · Agência e consultoria de marketing</title>
+<meta name="description" content="Out of the Box é uma agência e consultoria de marketing: branding, social media, tráfego pago, influência e sistemas para marcas que querem escalar o faturamento de verdade.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#F2629B">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ootbmarketing.com.br/">
-<meta property="og:title" content="Out of the Box · Marketing estratégico">
+<meta property="og:title" content="Out of the Box · Agência e consultoria de marketing">
 <meta property="og:description" content="Branding, performance, influência e sistemas para marcas que querem crescer.">
 <meta property="og:image" content="https://ootbmarketing.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -172,6 +172,23 @@ section{padding:clamp(72px,10vw,150px) 0;position:relative}
 @media (max-width:900px){.case{grid-template-columns:1fr;align-items:start}}
 @media (max-width:480px){.kpi3{grid-template-columns:1fr 1fr}.meter{grid-template-columns:66px 1fr 4.8em;gap:10px;font-size:15px}}
 
+/* FORMATOS */
+.models{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,32px);align-items:stretch}
+.model{border:1.5px solid var(--ink);border-radius:28px;padding:clamp(24px,2.8vw,44px);display:flex;flex-direction:column;gap:16px;background:var(--cream)}
+.model .tag{align-self:flex-start;font-size:13px;letter-spacing:.12em;text-transform:uppercase;border:1.5px solid currentColor;border-radius:999px;padding:.45em 1em}
+.model h3{font-size:clamp(30px,2.8vw,48px);letter-spacing:-.035em;line-height:1}
+.model h3 em{color:var(--accent)}
+.model p{color:var(--ink-soft)}
+.model ul{list-style:none;margin:auto 0 0;padding:18px 0 0;border-top:1px solid rgba(43,24,56,.2);display:grid;gap:8px}
+.model li::before{content:"✻";color:var(--accent);margin-right:.6em}
+.model.feat{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.model.feat p{color:rgba(255,246,238,.78)}
+.model.feat h3 em{color:var(--pink)}
+.model.feat .tag{color:var(--yellow)}
+.model.feat ul{border-color:rgba(255,246,238,.25)}
+.model.feat li::before{color:var(--yellow)}
+@media (max-width:1000px){.models{grid-template-columns:1fr}}
+
 /* MÉTODO */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,32px)}
 .step{background:var(--cream);border-radius:var(--radius);padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;gap:14px;min-height:300px}
@@ -238,6 +255,7 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
       <ul>
         <li><a href="#sobre">Agência</a></li>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#formatos">Formatos</a></li>
         <li><a href="#resultados">Resultados</a></li>
         <li><a href="#metodo">Método</a></li>
       </ul>
@@ -251,9 +269,9 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
 <!-- HERO -->
 <section class="hero" aria-label="Apresentação">
   <div class="hero-copy">
-    <p class="eyebrow ink" style="margin:0">Agência de marketing estratégico</p>
+    <p class="eyebrow ink" style="margin:0">Agência e consultoria de marketing</p>
     <h1>Marketing que tira a sua marca <em>da caixa</em></h1>
-    <p class="lead">Estratégia, criatividade e dados para marcas que querem crescer de verdade, sem abrir mão do branding.</p>
+    <p class="lead">Agência e consultoria de marketing: estratégia, criatividade e dados para marcas que querem crescer de verdade, sem abrir mão do branding.</p>
     <div class="hero-actions">
       <a class="btn" href="#contato">Quero conversar <span aria-hidden="true">→</span></a>
       <a class="btn ghost" href="#servicos">Ver serviços</a>
@@ -310,6 +328,39 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
   </div>
 </section>
 
+<!-- FORMATOS -->
+<section class="bg-cream" id="formatos">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <p class="eyebrow">Formatos</p>
+        <h2 class="h-lg">Do jeito que a sua <em>empresa precisa</em></h2>
+      </div>
+      <p class="lead" style="max-width:34ch">Tem marca que precisa de uma agência. Tem marca que precisa de alguém dentro do time, organizando a casa. A gente faz os dois.</p>
+    </div>
+    <div class="models">
+      <article class="model rv">
+        <span class="tag">Agência</span>
+        <h3>Marketing <em>completo</em></h3>
+        <p>A gente assume a estratégia e a execução: conteúdo, campanhas, tráfego, influência e site, com relatórios e reuniões periódicas.</p>
+        <ul><li>Gestão de redes e conteúdo</li><li>Tráfego pago e funis</li><li>Influência e collabs</li></ul>
+      </article>
+      <article class="model feat rv">
+        <span class="tag">Consultoria interna</span>
+        <h3>Dentro do <em>seu time</em></h3>
+        <p>Atuação lado a lado com a sua equipe para estruturar o marketing por dentro: processos, prioridades, rotina de dados e pessoas preparadas para tocar o dia a dia.</p>
+        <ul><li>Diagnóstico e plano de marketing</li><li>Estruturação de processos e rotinas</li><li>Acompanhamento e capacitação do time</li></ul>
+      </article>
+      <article class="model rv">
+        <span class="tag">Projetos</span>
+        <h3>Entregas <em>pontuais</em></h3>
+        <p>Para quando a necessidade é clara e tem começo, meio e fim.</p>
+        <ul><li>Identidade visual e reposicionamento</li><li>Sites, landing pages e lojas</li><li>Lançamentos e ferramentas sob medida</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- RESULTADOS -->
 <section class="bg-lilac" id="resultados">
   <div class="wrap">
@@ -318,13 +369,13 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
         <p class="eyebrow">Resultados</p>
         <h2 class="h-lg">Números que <em>falam por si</em></h2>
       </div>
-      <p class="note"><i aria-hidden="true">✻</i><span><b>Confidencialidade em primeiro lugar.</b> Por respeito aos nossos clientes, não divulgamos marcas nem dados sensíveis. Cases completos podem ser apresentados em reunião.</span></p>
+      <p class="note"><i aria-hidden="true">✻</i><span><b>Confidencialidade em primeiro lugar.</b> Por respeito aos nossos clientes, não divulgamos marcas nem dados sensíveis.</span></p>
     </div>
 
     <article class="case rv">
       <div>
-        <span class="seg">Saúde e beleza · E-commerce</span>
-        <h3>Marca de suplementos: <em>de recém-criada a referência</em></h3>
+        <span class="seg">Fitness e bem-estar · E-commerce</span>
+        <h3>Marca de fitness e bem-estar: <em>de recém-criada a referência</em></h3>
         <p class="desc">Estruturação do e-commerce, reposicionamento, lançamento de produtos, collabs e tráfego pago. Mesmo mês, três anos depois.</p>
         <div class="kpi3">
           <div><span class="num accent">+11,5 mil%</span><p>em vendas totais</p></div>
@@ -343,7 +394,7 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
       <div>
         <span class="seg">Social media · Comunidade</span>
         <h3>Um perfil que virou <em>comunidade</em></h3>
-        <p class="desc">Estratégia de conteúdo, gestão de creators e desafios de comunidade para uma marca de saúde e bem-estar.</p>
+        <p class="desc">Estratégia de conteúdo, gestão de creators e desafios de comunidade para uma marca de fitness e bem-estar.</p>
       </div>
       <div>
         <p class="ba-label">Seguidores</p>
@@ -404,7 +455,7 @@ footer a{text-decoration:none;opacity:.8} footer a:hover{opacity:1}
       <p class="lead">Marcas nacionais e internacionais, de startups recém-criadas a empresas consolidadas.</p>
     </div>
     <ul class="tags rv">
-      <li>Saúde e beleza</li><li>Suplementos</li><li>Viagens e turismo</li><li>Educação</li><li>Alimentação</li><li>Chocolates e confeitaria</li><li>Moda e acessórios</li><li>Bebidas</li><li>Uniformes</li><li>Casa e limpeza</li><li>Odontologia</li><li>Eventos</li>
+      <li>Fitness e bem-estar</li><li>Beleza</li><li>Viagens e turismo</li><li>Educação</li><li>Alimentação</li><li>Chocolates e confeitaria</li><li>Moda e acessórios</li><li>Bebidas</li><li>Uniformes</li><li>Casa e limpeza</li><li>Odontologia</li><li>Eventos</li>
     </ul>
   </div>
 </section>
