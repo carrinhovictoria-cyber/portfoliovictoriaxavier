@@ -4,20 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contato · Out of the Box</title>
-<meta name="description" content="Fale com a Out of the Box: agência e consultoria de marketing.">
+<meta name="description" content="Fale com a Out of the Box: gestão de marketing de performance, mentoria e criação de sites e aplicativos.">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#F2629B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Out of the Box">
+<meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://ootbmarketing.com.br/contato">
 <meta property="og:title" content="Contato · Out of the Box">
-<meta property="og:description" content="Fale com a Out of the Box: agência e consultoria de marketing.">
+<meta property="og:description" content="Fale com a Out of the Box: gestão de marketing de performance, mentoria e criação de sites e aplicativos.">
 <meta property="og:image" content="https://ootbmarketing.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contato · Out of the Box">
+<meta name="twitter:description" content="Fale com a Out of the Box: gestão de marketing de performance, mentoria e criação de sites e aplicativos.">
 <meta name="twitter:image" content="https://ootbmarketing.com.br/og-image.png">
 <link rel="canonical" href="https://ootbmarketing.com.br/contato">
 <link rel="preload" href="/assets/0081c60b.woff2" as="font" type="font/woff2" crossorigin>
@@ -48,19 +51,19 @@
 <section class="bg-lilac page-hero">
   <div class="wrap">
     <p class="crumb"><a href="/">Início</a> / Contato</p>
-    <h1 class="rv">Vamos tirar a sua marca <em>da caixa?</em></h1>
-    <p class="lead rv">Independente do desafio, a gente está pronta para somar :)</p>
+    <h1 class="rv">Bora <em>conversar?</em></h1>
+    <p class="lead rv">Conta um pouco da sua marca. A gente responde em até 2 dias úteis.</p>
   </div>
 </section>
 <section class="bg-cream" style="padding-top:clamp(56px,7vw,110px)">
   <div class="wrap contact-grid">
     <div class="contact-aside rv">
-      <h2 class="h-md">Conta pra gente sobre a <em>sua marca</em></h2>
-      <p>Preencha o formulário e a gente responde em até 2 dias úteis. Se preferir, mande um e-mail direto:</p>
+      <h2 class="h-md">Fala com a <em>gente</em></h2>
+      <p>Preencha o formulário ou mande um e-mail:</p>
       <a class="mail-link" href="mailto:agenciaootbmarketing@gmail.com?subject=Contato%20pelo%20site%20Out%20of%20the%20Box">agenciaootbmarketing@gmail.com</a>
-      <ul class="tags"><li>Branding</li><li>Performance</li><li>Influência</li><li>Sistemas</li></ul>
+      <ul class="tags"><li>Performance</li><li>Mentoria</li><li>Sites e apps</li></ul>
     </div>
-    <form class="form rv" id="form-contato" action="https://formsubmit.co/agenciaootbmarketing@gmail.com" method="POST">
+    <form class="form rv" id="form-contato" action="https://formsubmit.co/agenciaootbmarketing@gmail.com" method="POST" data-email="agenciaootbmarketing@gmail.com">
       <input type="hidden" name="_subject" value="Novo contato pelo site Out of the Box">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
@@ -73,18 +76,16 @@
       <div class="field full"><label for="f-site">Instagram ou site <small>(opcional)</small></label><input id="f-site" name="Instagram ou site" placeholder="@suamarca"></div>
       <fieldset class="field full"><legend>O que você procura?</legend>
         <div class="chips">
-          <label><input type="radio" name="Interesse" value="Agência" required><span>Agência</span></label>
-          <label><input type="radio" name="Interesse" value="Consultoria interna"><span>Consultoria interna</span></label>
-          <label><input type="radio" name="Interesse" value="Projeto pontual"><span>Projeto pontual</span></label>
+          <label><input type="radio" name="Interesse" value="Gestão de marketing" required><span>Gestão de marketing</span></label>
+          <label><input type="radio" name="Interesse" value="Mentoria"><span>Mentoria</span></label>
+          <label><input type="radio" name="Interesse" value="Site ou aplicativo"><span>Site ou aplicativo</span></label>
           <label><input type="radio" name="Interesse" value="Ainda não sei"><span>Ainda não sei</span></label>
         </div>
       </fieldset>
-      <div class="field full"><label for="f-inv">Investimento mensal previsto em marketing <small>(opcional)</small></label>
-        <select id="f-inv" name="Investimento"><option value="">Selecione</option><option>Até R$ 3 mil</option><option>De R$ 3 mil a R$ 8 mil</option><option>De R$ 8 mil a R$ 15 mil</option><option>Acima de R$ 15 mil</option><option>Prefiro conversar</option></select></div>
-      <div class="field full"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="Mensagem" required placeholder="Conte um pouco sobre a sua marca e o seu desafio"></textarea></div>
+      <div class="field full"><label for="f-msg">Mensagem <small>(opcional)</small></label><textarea id="f-msg" name="Mensagem" placeholder="Conta um pouco sobre a sua marca e o que você quer melhorar"></textarea></div>
       <div class="form-status" role="status" aria-live="polite"></div>
       <div class="actions">
-        <p>Seus dados são usados só para responder o seu contato.</p>
+        <p>Seus dados são usados só pra responder o seu contato.</p>
         <button class="btn" type="submit">Enviar mensagem <span aria-hidden="true">→</span></button>
       </div>
     </form>
